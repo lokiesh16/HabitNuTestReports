@@ -7,35 +7,122 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #f8f9fa;
-            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #E0C3FC 0%, #8EC5FC 100%);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            min-height: 100vh;
         }
         .container {
             max-width: 600px;
             margin-top: 50px;
             text-align: center;
-            padding: 20px;
-            background: white;
+            padding: 30px 20px 25px 20px;
+            background: linear-gradient(135deg, #ffffff 80%, #ffe5fa 100%);
+            border-radius: 16px;
+            box-shadow: 0 8px 28px rgba(80, 36, 120, 0.14);
+            border: 2px solid #c9d6ff;
+        }
+        h2 {
+            background: linear-gradient(90deg, #a770ef 0%, #f6d365 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+        .form-label {
+            font-weight: 500;
+            color: #6d28d9;
+        }
+        .form-select, .form-control {
+            background: rgba(255,255,255,0.8);
+            border: 1.5px solid #a770ef;
             border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-size: 1rem;
+            margin-bottom: 15px;
+            transition: box-shadow 0.2s;
+        }
+        .form-select:focus, .form-control:focus {
+            border-color: #f6d365;
+            box-shadow: 0 0 0 3px #fde68a80;
+        }
+        #triggerBtn {
+            background: linear-gradient(90deg, #a770ef 0%, #f6d365 100%);
+            color: #fff;
+            font-size: 1.15rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.1s, box-shadow 0.2s;
+            box-shadow: 0 3px 8px #a770ef40;
+        }
+        #triggerBtn:active {
+            transform: scale(0.98);
+        }
+        #triggerBtn:disabled {
+            background: #a3a3a3;
         }
         #status {
-            margin-top: 20px;
-            font-weight: bold;
+            margin-top: 22px;
+            font-weight: 600;
+            font-size: 1.07em;
+            letter-spacing: 0.02em;
         }
-        .form-control, .form-select {
-            margin-bottom: 15px;
+        .text-success {
+            color: #34d399 !important;
+        }
+        .text-danger {
+            color: #f87171 !important;
+        }
+        .text-info {
+            color: #2563eb !important;
+        }
+        .form-control::placeholder {
+            color: #a3a3a3;
+        }
+        .form-select option {
+            color: #22223b;
+        }
+        .form-select option[value=""] {
+            color: #a3a3a3;
+        }
+        .mt-3 {
+            margin-top: 1.2rem !important;
+        }
+        small.text-danger {
+            color: #d97706 !important;
+            font-weight: 500;
+        }
+        .animated-bg {
+            animation: gradientMove 10s ease-in-out infinite alternate;
+        }
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        /* Module info box */
+        #testTypeInfo {
+            font-size: 0.97em;
+            padding: 0.8rem 1rem;
+            margin-bottom: 1rem;
+            margin-top: -8px;
+            text-align: left;
+            display: none;
+        }
+        .note {
+            font-size: 0.93em;
+            color: #8d5ed6;
+            margin-top: -12px;
+            margin-bottom: 10px;
+            text-align: left;
+            margin-left: 2px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h2>🚀 Hey! Now you can also trigger HabitNu Automation Tests</h2>
-        <p>Fill in the options and click the button to run the tests</p>
+    <div class="container shadow-lg animated-bg">
+        <h2>🚀 Trigger HabitNu Automation Tests</h2>
+        <p style="color:#5f27cd;font-weight:500;margin-bottom:2.5rem;">Fill the options & click Start to run your tests!</p>
 
-<!--         <input type="text" id="token" class="form-control" placeholder="Enter GitHub PAT" required> -->
         <input type="password" id="token" class="form-control" placeholder="Enter GitHub PAT" required>
-
 
         <label for="environment" class="form-label">Environment *</label>
         <select id="environment" class="form-select" required>
@@ -45,39 +132,158 @@
             <option value="development">Development</option>
         </select>
 
-<!--         <label for="logLevel" class="form-label">Log Level *</label>
-        <select id="logLevel" class="form-select" required>
-            <option value="">Select log level</option>
-            <option value="info">Info</option>
-            <option value="warning">Warning</option>
-            <option value="debug">Debug</option>
-        </select>
-
-        <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="tags">
-            <label class="form-check-label" for="tags">Use Tags</label>
-        </div> -->
-
-        <label for="testType" class="form-label">Test Type</label>
+        <label for="testType" class="form-label">Portal Type</label>
         <select id="testType" class="form-select">
             <option value="">Select portal</option>
             <option value="webapp">Webapp</option>
             <option value="Coachportal">Coachportal</option>
+            <option value="webapp-api">Webapp - API</option>
+            <option value="Coachportal-api">CoachPortal - API</option>
+            <option value="mobile">IOS-MobileApp</option>
+            <option value="userCreation">User Creation</option>
         </select>
 
-        <label for="testName" class="form-label">Test Name</label>
-        <select id="testName" class="form-select">
-            <option value="">Select test name</option>
-            <option value="HabitNuWebAppRegression">HabitNuWebAppRegression</option>
-            <option value="HabitNuCoachesPortalRegression">HabitNuCoachesPortalRegression</option>
+        <div id="testTypeInfo" class="alert alert-info"></div>
+
+        <!-- Module picker (dynamically shown/hidden) -->
+        <label for="moduleSelect" class="form-label" id="moduleLabel" style="display:none;">Module</label>
+        <select id="moduleSelect" class="form-select" style="display:none;">
+            <option value="">Select module</option>
         </select>
+        <div id="moduleNote" class="note" style="display:none;">
+            Selecting a module will trigger only that module’s tests.<br>
+            Leave blank to run the full regression.
+        </div>
 
-        <button id="triggerBtn" class="btn btn-primary btn-lg mt-3">Start</button>
+        <!-- User Creation: Only show this when testType is userCreation -->
+        <div id="userCreationFields" style="display:none;">
+            <label for="test_path_user" class="form-label">User Creation</label>
+            <select id="test_path_user" class="form-select">
+                <option value="tests/Web_App_tests/test_NewUser.py">New User Creation with Onboarding form completed</option>
+                <option value="tests/Web_App_tests/test_NewUser_2.py">New User Creation without Onboarding form completed</option>
+            </select>
+        </div>
 
+        <!-- Mobile fields (shown only for mobile) -->
+        <div id="mobileFields" style="display:none;">
+            <label for="trigger_type" class="form-label">Test Type</label>
+            <select id="trigger_type" class="form-select">
+                <option value="sanity">Sanity</option>
+                <option value="regression">Regression</option>
+            </select>
+            <label for="username" class="form-label mt-3">Username *</label>
+            <input type="text" id="username" class="form-control" placeholder="Enter username">
+            <small class="text-danger d-block mt-1">
+                Ensure this user is part of the <strong>"automationForLearn"</strong> cohort.
+            </small>
+            <label for="password" class="form-label mt-3">Password *</label>
+            <input type="password" id="password" class="form-control" placeholder="Enter password">
+        </div>
+
+        <button id="triggerBtn" class="btn btn-lg mt-3">Start</button>
         <div id="status"></div>
     </div>
-
     <script>
+        // Info about modules automated under each test type
+        const testTypeModules = {
+            webapp: "Modules include <b>Login</b>, <b>Registration</b>, <b>Dashboard</b>, <b>Reports</b>, <b>Profile</b>, are automated and available.",
+            Coachportal: "Modules include <b>Coach Dashboard</b>, <b>User Management</b>, <b>Messaging</b>, <b>Reports</b>, are automated and available.",
+            "webapp-api": "API modules for WebApp available for selection.",
+            "Coachportal-api": "API modules for CoachPortal available for selection.",
+            mobile: "Modules include <b>Login</b>, <b>Onboarding</b>, <b>Tracking</b>, <b>Notifications</b>, <b>User flows</b>, are automated and available.",
+            userCreation: "Automated different user onboarding scenarios: <b>creation with onboarding form completed</b> or <b>without onboarding form</b>."
+        };
+
+        // Available modules per test type for "run specific module" feature
+        const testTypeModulesList = {
+            webapp: ["Login", "Registration", "Dashboard", "Reports", "Profile"],
+            Coachportal: ["Coach Dashboard", "User Management", "Messaging", "Reports"],
+            "webapp-api": ["CustomRecipes", "Program", "Eligibility", "Profile"],
+            "Coachportal-api": ["Coach", "User Management", "Messaging", "Reports"],
+            mobile: ["Login", "Onboarding", "Tracking", "Notifications", "User flows"]
+            // userCreation does not need modules (special paths)
+        };
+
+        // Mapping for testClass based on module selection
+        const webappModuleToTestClass = {
+            "Login": "WebAppSanityPackage.Login",
+            "Registration": "WebAppSanityPackage.Registration",
+            "Dashboard": "WebAppSanityPackage.Dashboard",
+            "Reports": "WebAppSanityPackage.Reports",
+            "Profile": "WebAppSanityPackage.Profile"
+        };
+
+        const coachportalModuleToTestClass = {
+            "Coach Dashboard": "CoachPortalSanityPackage.CoachDashboard",
+            "User Management": "CoachPortalSanityPackage.UserManagement",
+            "Messaging": "CoachPortalSanityPackage.Messaging",
+            "Reports": "CoachPortalSanityPackage.Reports"
+        };
+
+        // Mapping for test_path for API portals
+        const webappApiModuleToTestPath = {
+            "CustomRecipes": "tests/Web_App_tests/test_CustomRecipes.py",
+            "Program": "tests/api_tests/test_Program.py",
+            "Eligibility": "tests/api_tests/test_Eligibility.py",
+            "Profile": "tests/api_tests/test_Profile.py"
+        };
+
+        const coachportalApiModuleToTestPath = {
+            "Coach": "tests/api_tests/test_Coach.py",
+            "User Management": "tests/api_tests/test_UserManagement.py",
+            "Messaging": "tests/api_tests/test_Messaging.py",
+            "Reports": "tests/api_tests/test_Reports.py"
+        };
+
+        document.getElementById("testType").addEventListener("change", function() {
+            const testType = this.value;
+            document.getElementById("mobileFields").style.display = testType === "mobile" ? "block" : "none";
+            document.getElementById("userCreationFields").style.display = testType === "userCreation" ? "block" : "none";
+
+            // Info box
+            const infoBox = document.getElementById("testTypeInfo");
+            if (testTypeModules[testType]) {
+                infoBox.style.display = "block";
+                infoBox.innerHTML = testTypeModules[testType];
+            } else {
+                infoBox.style.display = "none";
+                infoBox.innerHTML = "";
+            }
+
+            // Module dropdown update
+            const moduleSelect = document.getElementById("moduleSelect");
+            const moduleLabel = document.getElementById("moduleLabel");
+            const moduleNote = document.getElementById("moduleNote");
+            moduleSelect.innerHTML = '<option value="">Select module</option>';
+            if (testTypeModulesList[testType]) {
+                moduleSelect.style.display = "block";
+                moduleLabel.style.display = "block";
+                moduleNote.style.display = "block";
+                testTypeModulesList[testType].forEach(module => {
+                    moduleSelect.innerHTML += `<option value="${module}">${module}</option>`;
+                });
+            } else {
+                moduleSelect.style.display = "none";
+                moduleLabel.style.display = "none";
+                moduleNote.style.display = "none";
+            }
+        });
+
+        document.getElementById("moduleSelect").addEventListener("change", function() {
+            const moduleVal = this.value;
+            const testType = document.getElementById("testType").value;
+
+            // Disable/Enable Trigger Type for IOS-MobileApp
+            if (testType === "mobile") {
+                const triggerType = document.getElementById("trigger_type");
+                if (moduleVal) {
+                    triggerType.disabled = true;
+                } else {
+                    triggerType.disabled = false;
+                }
+            }
+        });
+
         document.getElementById("triggerBtn").addEventListener("click", triggerWorkflow);
 
         async function triggerWorkflow() {
@@ -87,23 +293,99 @@
 
             const token = document.getElementById("token").value.trim();
             const environment = document.getElementById("environment").value;
-            // const logLevel = document.getElementById("logLevel").value;
-            // const tags = document.getElementById("tags").checked;
             const testType = document.getElementById("testType").value;
-            const testName = document.getElementById("testName").value;
+            const moduleSelected = document.getElementById("moduleSelect").value;
+
+            let test_path = "";
+            let testClass = "";
+
+            if (testType === "userCreation") {
+                test_path = document.getElementById("test_path_user").value;
+            } else if (testType === "mobile") {
+                const triggerType = document.getElementById("trigger_type").value;
+                test_path = triggerType === "sanity" ? "tests/userJourneySanity" : "tests";
+            } else if ((testType === "webapp" || testType === "Coachportal") && moduleSelected) {
+                if (testType === "webapp") {
+                    testClass = webappModuleToTestClass[moduleSelected];
+                } else if (testType === "Coachportal") {
+                    testClass = coachportalModuleToTestClass[moduleSelected];
+                }
+            } else if ((testType === "webapp-api" || testType === "Coachportal-api") && moduleSelected) {
+                if (testType === "webapp-api") {
+                    test_path = webappApiModuleToTestPath[moduleSelected];
+                } else if (testType === "Coachportal-api") {
+                    test_path = coachportalApiModuleToTestPath[moduleSelected];
+                }
+            }
+
+            // Mobile fields
+            const username = document.getElementById("username") ? document.getElementById("username").value : "";
+            const password = document.getElementById("password") ? document.getElementById("password").value : "";
 
             if (!token || !environment) {
                 statusElement.innerHTML = "<span class='text-danger'>❌ Please fill in all required fields.</span>";
                 triggerBtn.disabled = false;
                 return;
             }
+            if (testType === "mobile" && (!username || !password)) {
+                statusElement.innerHTML = "<span class='text-danger'>❌ Please fill in all required mobile fields.</span>";
+                triggerBtn.disabled = false;
+                return;
+            }
 
             statusElement.innerHTML = "<span class='text-info'>🔄 Triggering workflow...</span>";
 
-            const owner = "PranaDiabetes";  
-            const repo = "UIAutomation";  
-            const workflow = "ci.yml";  
-            const branch = "master";  
+            let owner = "PranaDiabetes";
+            let repo = "UIAutomation";
+            let workflow = "ci.yml";
+            let branch = "master";
+            let payloadInputs = {
+                environment: environment,
+                logLevel: "warning",
+                testType: testType
+            };
+
+            // Add testClass if module is selected for webapp or Coachportal
+            if ((testType === "webapp" || testType === "Coachportal") && moduleSelected && testClass) {
+                payloadInputs.testClass = testClass;
+            }
+
+            // Add test_path if module is selected for API portals
+            if ((testType === "webapp-api" || testType === "Coachportal-api") && moduleSelected && test_path) {
+                // payloadInputs.test_path = test_path;
+                owner = "lokiesh16";
+                repo = "testLoke";
+                branch = "main";
+                payloadInputs = {
+                    environment: environment,
+                    test_path: test_path
+                };
+            }
+
+            // Adjust for mobile repo
+            if (testType === "mobile") {
+                repo = "ios-app-automation";
+                workflow = "ios-appium-tests.yml";
+                branch = "main";
+                payloadInputs = {
+                    environment: environment,
+                    logLevel: "warning",
+                    test_path: test_path,
+                    username: username,
+                    password: password
+                };
+                if (moduleSelected) payloadInputs.module = moduleSelected;
+            }
+            if (testType === "userCreation") {
+                owner = "lokiesh16";
+                repo = "testLoke";
+                workflow = "ci.yml";
+                branch = "main";
+                payloadInputs = {
+                    environment: environment,
+                    test_path: test_path
+                };
+            }
 
             try {
                 const response = await fetch(
@@ -116,13 +398,7 @@
                         },
                         body: JSON.stringify({
                             ref: branch,
-                            inputs: {
-                                environment: environment,
-                                logLevel: "warning",
-                                // tags: tags,
-                                testType: testType,
-                                testName: testName
-                            }
+                            inputs: payloadInputs
                         })
                     }
                 );
