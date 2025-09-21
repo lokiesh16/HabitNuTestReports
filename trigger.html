@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigger Automation Tests</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin-top: 50px;
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        #status {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .form-control, .form-select {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🚀 Hey! Now you can also trigger HabitNu Automation Tests</h2>
+        <p>Fill in the options and click the button to run the tests</p>
+
+<!--         <input type="text" id="token" class="form-control" placeholder="Enter GitHub PAT" required> -->
+        <input type="password" id="token" class="form-control" placeholder="Enter GitHub PAT" required>
+
+
+        <label for="environment" class="form-label">Environment *</label>
+        <select id="environment" class="form-select" required>
+            <option value="">Select environment</option>
+            <option value="production">Production</option>
+            <option value="staging">Staging</option>
+            <option value="development">Development</option>
+        </select>
+
+<!--         <label for="logLevel" class="form-label">Log Level *</label>
+        <select id="logLevel" class="form-select" required>
+            <option value="">Select log level</option>
+            <option value="info">Info</option>
+            <option value="warning">Warning</option>
+            <option value="debug">Debug</option>
+        </select>
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="tags">
+            <label class="form-check-label" for="tags">Use Tags</label>
+        </div> -->
+
+        <label for="testType" class="form-label">Test Type</label>
+        <select id="testType" class="form-select">
+            <option value="">Select portal</option>
+            <option value="webapp">Webapp</option>
+            <option value="Coachportal">Coachportal</option>
+        </select>
+
+        <label for="testName" class="form-label">Test Name</label>
+        <select id="testName" class="form-select">
+            <option value="">Select test name</option>
+            <option value="HabitNuWebAppRegression">HabitNuWebAppRegression</option>
+            <option value="HabitNuCoachesPortalRegression">HabitNuCoachesPortalRegression</option>
+        </select>
+
+        <button id="triggerBtn" class="btn btn-primary btn-lg mt-3">Start</button>
+
+        <div id="status"></div>
+    </div>
+
+    <script>
+        document.getElementById("triggerBtn").addEventListener("click", triggerWorkflow);
+
+        async function triggerWorkflow() {
+            const statusElement = document.getElementById("status");
+            const triggerBtn = document.getElementById("triggerBtn");
+            triggerBtn.disabled = true;
+
+            const token = document.getElementById("token").value.trim();
+            const environment = document.getElementById("environment").value;
+            // const logLevel = document.getElementById("logLevel").value;
+            // const tags = document.getElementById("tags").checked;
+            const testType = document.getElementById("testType").value;
+            const testName = document.getElementById("testName").value;
+
+            if (!token || !environment) {
+                statusElement.innerHTML = "<span class='text-danger'>❌ Please fill in all required fields.</span>";
+                triggerBtn.disabled = false;
+                return;
+            }
+
+            statusElement.innerHTML = "<span class='text-info'>🔄 Triggering workflow...</span>";
+
+            const owner = "PranaDiabetes";  
+            const repo = "UIAutomation";  
+            const workflow = "ci.yml";  
+            const branch = "master";  
+
+            try {
+                const response = await fetch(
+                    `https://api.github.com/repos/${owner}/${repo}/actions/workflows/${workflow}/dispatches`,
+                    {
+                        method: "POST",
+                        headers: {
+                            "Authorization": `Bearer ${token}`,
+                            "Accept": "application/vnd.github.v3+json"
+                        },
+                        body: JSON.stringify({
+                            ref: branch,
+                            inputs: {
+                                environment: environment,
+                                logLevel: "warning",
+                                // tags: tags,
+                                testType: testType,
+                                testName: testName
+                            }
+                        })
+                    }
+                );
+
+                if (response.ok) {
+                    statusElement.innerHTML = "<span class='text-success'>✅ Workflow triggered successfully!</span>";
+                } else {
+                    const error = await response.json();
+                    statusElement.innerHTML = `<span class='text-danger'>❌ Failed: ${error.message}</span>`;
+                }
+            } catch (err) {
+                statusElement.innerHTML = `<span class='text-danger'>❌ Error: ${err.message}</span>`;
+            } finally {
+                triggerBtn.disabled = false;
+            }
+        }
+    </script>
+</body>
+</html>
