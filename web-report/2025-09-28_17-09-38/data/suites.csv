@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Sep 28 17:09:05 UTC 2025","Sun Sep 28 17:09:31 UTC 2025","25840","tests.Web_App_tests","test_Paywal","TestPaywal","","","Given user's cohort programDate is updated, When there are 7 days left in the program, Then the paywall banner should be validated successfully",""
