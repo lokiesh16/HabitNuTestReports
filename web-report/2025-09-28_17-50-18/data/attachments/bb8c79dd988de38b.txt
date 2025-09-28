@@ -1,0 +1,4 @@
+INFO     stripe:_util.py:128 message='Request to Stripe api' method=get url=https://api.stripe.com/v1/customers?limit=100
+INFO     stripe:_util.py:128 message='Stripe API response' path=https://api.stripe.com/v1/customers?limit=100 response_code=200
+INFO     stripe:_util.py:128 message='Request to Stripe api' method=delete url=https://api.stripe.com/v1/customers/cus_T8fnfHtgJESJUg
+INFO     stripe:_util.py:128 message='Stripe API response' path=https://api.stripe.com/v1/customers/cus_T8fnfHtgJESJUg response_code=200
