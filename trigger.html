@@ -203,8 +203,8 @@
         const testTypeModules = {
             webapp: "Modules include <b>Login</b>, <b>Registration</b>, <b>Dashboard</b>, <b>Reports</b>, <b>Profile</b>, are automated and available.",
             Coachportal: "Modules include <b>Coach Dashboard</b>, <b>User Management</b>, <b>Messaging</b>, <b>Reports</b>, are automated and available.",
-            "webapp-api": "Modules include <b>CustomRecipes</b>, <b>MyMeals</b>, <b>SDOH-Forms</b>, <b>Registartion Banner</b>,<b>Login & Reset Password</b>,  <b>Paywal</b>. are automated via api and ...",
-            "Coachportal-api": "Modules include <b>CustomRecipes</b>, <b>MyMeals</b>, <b>SDOH-Forms</b>, <b>Registartion Banner</b>,<b>Login & Reset Password</b>,  <b>Paywal</b>. are automated via api...",
+            webapp_api: "Modules include <b>CustomRecipes</b>, <b>MyMeals</b>, <b>SDOH-Forms</b>, <b>Registartion Banner</b>,<b>Login & Reset Password</b>,  <b>Paywal</b>. are automated via api and ...",
+            Coachportal_api: "Modules include <b>CustomRecipes</b>, <b>MyMeals</b>, <b>SDOH-Forms</b>, <b>Registartion Banner</b>,<b>Login & Reset Password</b>,  <b>Paywal</b>. are automated via api...",
             mobile: "Modules include <b>Login</b>, <b>Onboarding</b>, <b>Tracking</b>, <b>Notifications</b>, <b>User flows</b>, are automated and available.",
             userCreation: "Automated different user onboarding scenarios: <b>creation with onboarding form completed</b> or <b>without onboarding form</b>."
         };
@@ -213,8 +213,8 @@
         const testTypeModulesList = {
             webapp: ["Login", "Registration", "Dashboard", "Reports", "Profile"],
             Coachportal: ["Coach Dashboard", "User Management", "Messaging", "Reports"],
-            "webapp-api": ["CustomRecipes", "MyMeals", "SDOH-Forms", "Registartion Banner", "Login & Reset Password", "Paywal"],
-            "Coachportal-api": ["Coach", "User Management", "Messaging", "Reports"],
+            webapp_api: ["Forms", "Paywal"],
+            Coachportal_api: ["Coach", "User Management", "Messaging", "Reports"],
             mobile: ["Login", "Onboarding", "Tracking", "Notifications", "User flows"]
             // userCreation does not need modules (special paths)
         };
@@ -237,11 +237,11 @@
 
         // Mapping for test_path for API portals
         const webappApiModuleToTestPath = {
-            "CustomRecipes": "tests/Web_App_tests/test_CustomRecipes.py",
-            "MyMeals": "tests/Web_App_tests/test_MyMeals.py",
-            "SDOH-Forms": "tests/Web_App_tests/test_SDOHForms.py",
-            "Registartion Banner": "tests/Web_App_tests/test_RegistartionBanner.py",
-            "Login & Reset Password": "tests/Web_App_tests/test_Login_ResetPassword.py",
+            // "CustomRecipes": "tests/Web_App_tests/test_CustomRecipes.py",
+            // "MyMeals": "tests/Web_App_tests/test_MyMeals.py",
+            "Forms": "tests/Web_App_tests/test_Forms.py",
+            // "Registartion Banner": "tests/Web_App_tests/test_RegistartionBanner.py",
+            // "Login & Reset Password": "tests/Web_App_tests/test_Login_ResetPassword.py",
             "Paywal": "tests/Web_App_tests/test_Paywal.py",
         };
 
@@ -327,10 +327,10 @@
                 } else if (testType === "Coachportal") {
                     testClass = coachportalModuleToTestClass[moduleSelected];
                 }
-            } else if ((testType === "webapp-api" || testType === "Coachportal-api") && moduleSelected) {
-                if (testType === "webapp-api") {
+            } else if ((testType === "webapp_api" || testType === "Coachportal_api") && moduleSelected) {
+                if (testType === "webapp_api") {
                     test_path = webappApiModuleToTestPath[moduleSelected];
-                } else if (testType === "Coachportal-api") {
+                } else if (testType === "Coachportal_api") {
                     test_path = coachportalApiModuleToTestPath[moduleSelected];
                 }
             }
