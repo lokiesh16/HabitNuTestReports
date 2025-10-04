@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Oct 04 14:03:57 UTC 2025","Sat Oct 04 14:04:52 UTC 2025","55442","tests.Web_App_tests","test_fitbit","TestFitbit","","","test_add_validate_fitbit_device",""
