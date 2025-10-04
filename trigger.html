@@ -133,7 +133,9 @@
             <ul style="margin-top:8px;">
                 <li>Use a valid GitHub Personal Access Token (PAT) with <b>workflow</b> permissions.</li>
                 <li>Choose the correct environment and portal for your test run.</li>
-                <li>To run modules like <b>"Paywall" & Forms (Persona, GLP, SDOH)</b>, select Portal Type==Webapp - API and select the appropriate module. </br>
+                <li>To run modules like <b>"Paywall" & Forms (Persona, GLP, SDOH)</b>, select Portal Type==Webapp - API and select the appropriate module. </li>    
+                <li>To perform end to end validation of devices such as <b>Withings</b> and <b>FITBIT</b>, select Portal Type==Webapp - API and select the appropriate module.<br>
+
                 <span style="font-size: smaller; color: green;">
                     (<i>Webapp-API follows a hybrid approach: primarily validating through APIs, 
                     but also performing Stronger UI validations where required ensuring comprehensive coverage</i>)
@@ -218,7 +220,7 @@
         const testTypeModulesList = {
             webapp: ["Login", "Registration", "Dashboard", "Reports", "Profile"],
             Coachportal: ["Coach Dashboard", "User Management", "Messaging", "Reports"],
-            webapp_api: ["Forms", "Paywal"],
+            webapp_api: ["Forms", "Paywal", "Withings", "FITBIT"],
             Coachportal_api: ["Coach", "User Management", "Messaging", "Reports"],
             mobile: ["Login", "Onboarding", "Tracking", "Notifications", "User flows"]
             // userCreation does not need modules (special paths)
@@ -248,6 +250,8 @@
             // "Registartion Banner": "tests/Web_App_tests/test_RegistartionBanner.py",
             // "Login & Reset Password": "tests/Web_App_tests/test_Login_ResetPassword.py",
             "Paywal": "tests/Web_App_tests/test_Paywal.py",
+            "Withings": "tests/Web_App_tests/test_devices.py",
+            "FITBIT": "tests/Web_App_tests/test_fitbit.py"
         };
 
         const coachportalApiModuleToTestPath = {
