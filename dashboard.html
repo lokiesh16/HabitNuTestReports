@@ -3,6 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Automation Dashboard</title>
+  <div style="margin: 12px 0;">
+    <label for="reportType">Report:</label>
+    <select id="reportType" onchange="onReportChange()">
+      <option value="web-report">Web</option>
+      <option value="coaches-report">Coaches</option>
+      <option value="api-report">API</option>
+    </select>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -64,16 +72,30 @@
 </table>
 
 <script>
+let CURRENT_REPORT = 'web-report';
 const MAX_RUNS = 10;
 let chart;
 
 /* ---------- Helpers ---------- */
+function onReportChange() {
+  CURRENT_REPORT = document.getElementById('reportType').value;
+
+  // Reset chart & table
+  if (chart) chart.destroy();
+  document.getElementById('runs').innerHTML = '';
+
+  loadDashboard();
+}
 
 function parseRunDate(run) {
   const [date, time] = run.split('_');
   return new Date(`${date}T${time.replace(/-/g, ':')}`);
 }
-
+function getEnvironmentLabel() {
+  if (CURRENT_REPORT === 'api-report') return 'api';
+  if (CURRENT_REPORT === 'coaches-report') return 'coaches';
+  return 'web';
+}
 function collectStats(node, stats) {
   if (node.statistic) {
     stats.passed += node.statistic.passed || 0;
@@ -91,7 +113,7 @@ function collectStats(node, stats) {
 /* ---------- Main ---------- */
 
 async function loadDashboard() {
-  const runs = await fetch('web-report/runs.json').then(r => r.json());
+  const runs = await fetch(`${CURRENT_REPORT}/runs.json`).then(r => r.json());
 
   const sortedRuns = runs
     .map(run => ({ run, date: parseRunDate(run) }))
@@ -103,7 +125,7 @@ async function loadDashboard() {
   tableBody.innerHTML = '';
 
   for (const item of sortedRuns) {
-    const summaryUrl = `web-report/${item.run}/widgets/summary.json`;
+    const summaryUrl = `${CURRENT_REPORT}/${item.run}/widgets/summary.json`;
 
     try {
       const suites = await fetch(summaryUrl).then(r => r.json());
@@ -136,13 +158,14 @@ async function loadDashboard() {
           <td>${item.run}</td>
           <td>${item.date.toISOString().split('T')[0]}</td>
           <td>staging</td>
-          <td>iPhone (physical)</td>
+          <td>${getEnvironmentLabel()}</td>
+          <td>${getEnvironmentLabel()}</td>
           <td class="${statusClass}">
             ${statusText} (${stats.passed}/${stats.total})
           </td>
           <td>-</td>
           <td>
-            <a href="web-report/${item.run}/index.html" target="_blank">
+            <a href="${CURRENT_REPORT}/${item.run}/index.html" target="_blank">
               View Allure
             </a>
           </td>
