@@ -121,15 +121,15 @@ async function loadDashboard() {
       } else {
         collectStats(suites, stats);
       }
-
+      const effectiveFailed = stats.failed + stats.broken;
       trendData.push({
         label: item.run,
         passed: stats.passed,
-        failed: stats.failed
+        failed: effectiveFailed
       });
 
-      const statusClass = stats.failed > 0 ? 'fail' : 'pass';
-      const statusText  = stats.failed > 0 ? 'FAILED' : 'PASSED';
+      const statusClass = effectiveFailed > 0 ? 'fail' : 'pass';
+      const statusText  = effectiveFailed > 0 ? 'FAILED' : 'PASSED';
 
       tableBody.innerHTML += `
         <tr>
