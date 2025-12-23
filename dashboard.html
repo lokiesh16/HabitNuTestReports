@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Automation Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      padding: 20px;
+    }
+    h1 { margin-bottom: 4px; }
+    p { color: #94a3b8; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #334155;
+    }
+    th {
+      background: #1e293b;
+      text-align: left;
+    }
+    tr:hover {
+      background: #1e293b;
+    }
+    .pass { color: #22c55e; font-weight: bold; }
+    .fail { color: #ef4444; font-weight: bold; }
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<h1>📊 Automation Dashboard</h1>
+<p>Real device • GitHub Actions • Allure</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Run</th>
+      <th>Date</th>
+      <th>Environment</th>
+      <th>Device</th>
+      <th>Status</th>
+      <th>Duration</th>
+      <th>Report</th>
+    </tr>
+  </thead>
+  <tbody id="runs"></tbody>
+</table>
+
+<script>
+fetch('runs.json')
+  .then(res => res.json())
+  .then(data => {
+    const tbody = document.getElementById('runs');
+    data.reverse().forEach(run => {
+      const status = run.failed > 0 ? 'FAILED' : 'PASSED';
+      const cls = run.failed > 0 ? 'fail' : 'pass';
+
+      tbody.innerHTML += `
+        <tr>
+          <td>${run.runId}</td>
+          <td>${run.date}</td>
+          <td>${run.environment}</td>
+          <td>${run.device}</td>
+          <td class="${cls}">${status} (${run.passed}/${run.total})</td>
+          <td>${run.duration}</td>
+          <td><a href="${run.reportUrl}" target="_blank">View Allure</a></td>
+        </tr>
+      `;
+    });
+  });
+</script>
+
+</body>
+</html>
