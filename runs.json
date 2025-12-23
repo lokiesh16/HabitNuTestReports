@@ -1,0 +1,13 @@
+[
+  {
+    "runId": "initial",
+    "date": "2025-12-23",
+    "environment": "staging",
+    "device": "iPhone (physical)",
+    "total": 42,
+    "passed": 42,
+    "failed": 0,
+    "duration": "12m",
+    "reportUrl": "web-report/index.html"
+  }
+]
