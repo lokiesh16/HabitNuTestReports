@@ -116,7 +116,11 @@ async function loadDashboard() {
         total: 0
       };
 
-      collectStats(suites, stats);
+      if (Array.isArray(suites)) {
+        suites.forEach(suite => collectStats(suite, stats));
+      } else {
+        collectStats(suites, stats);
+      }
 
       trendData.push({
         label: item.run,
