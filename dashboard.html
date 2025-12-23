@@ -103,7 +103,7 @@ async function loadDashboard() {
   tableBody.innerHTML = '';
 
   for (const item of sortedRuns) {
-    const summaryUrl = `web-report/${item.run}/data/suites.json`;
+    const summaryUrl = `web-report/${item.run}/widgets/summary.json`;
 
     try {
       const suites = await fetch(summaryUrl).then(r => r.json());
