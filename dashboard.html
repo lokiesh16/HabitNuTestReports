@@ -57,28 +57,67 @@
 </table>
 
 <script>
-fetch('runs.json')
-  .then(res => res.json())
-  .then(data => {
-    const tbody = document.getElementById('runs');
-    data.reverse().forEach(run => {
-      const status = run.failed > 0 ? 'FAILED' : 'PASSED';
-      const cls = run.failed > 0 ? 'fail' : 'pass';
+const MAX_RUNS = 10;
+let allRuns = [];
+
+function parseRunDate(run) {
+  // Converts: 2025-12-23_15-05-12 → Date
+  const [date, time] = run.split('_');
+  const formatted = `${date}T${time.replace(/-/g, ':')}`;
+  return new Date(formatted);
+}
+
+async function loadDashboard() {
+  const runs = await fetch('web-report/runs.json').then(r => r.json());
+
+  // Sort latest first
+  allRuns = runs
+    .map(run => ({ run, date: parseRunDate(run) }))
+    .sort((a, b) => b.date - a.date);
+
+  renderRuns(allRuns.slice(0, MAX_RUNS));
+}
+
+async function renderRuns(runs) {
+  const tbody = document.getElementById('runs');
+  tbody.innerHTML = '';
+
+  for (const item of runs) {
+    const summaryUrl = `web-report/${item.run}/widgets/summary.json`;
+
+    try {
+      const summary = await fetch(summaryUrl).then(r => r.json());
+      const stat = summary.statistic;
+
+      const statusClass = stat.failed > 0 ? 'fail' : 'pass';
+      const statusText = stat.failed > 0 ? 'FAILED' : 'PASSED';
 
       tbody.innerHTML += `
         <tr>
-          <td>${run.runId}</td>
-          <td>${run.date}</td>
-          <td>${run.environment}</td>
-          <td>${run.device}</td>
-          <td class="${cls}">${status} (${run.passed}/${run.total})</td>
-          <td>${run.duration}</td>
-          <td><a href="${run.reportUrl}" target="_blank">View Allure</a></td>
+          <td>${item.run}</td>
+          <td>${item.date.toISOString().split('T')[0]}</td>
+          <td>staging</td>
+          <td>iPhone (physical)</td>
+          <td class="${statusClass}">
+            ${statusText} (${stat.passed}/${stat.total})
+          </td>
+          <td>${Math.round(summary.time.duration / 60000)}m</td>
+          <td>
+            <a href="web-report/${item.run}/index.html" target="_blank">
+              View Allure
+            </a>
+          </td>
         </tr>
       `;
-    });
-  });
+    } catch (e) {
+      console.error(`Failed loading ${summaryUrl}`, e);
+    }
+  }
+}
+
+loadDashboard();
 </script>
+
 
 </body>
 </html>
