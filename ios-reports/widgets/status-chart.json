@@ -1,1 +1,1 @@
-[]
+[{"uid":"81bef5b7f83f4503","name":"test_add_apple_health_data","time":{"start":1766481988314,"stop":1766482009104,"duration":20790},"status":"broken","severity":"normal"},{"uid":"601ccea84eb4720","name":"test_setuoHealthData_sync","time":{"start":1766481934282,"stop":1766481988308,"duration":54026},"status":"passed","severity":"normal"}]
