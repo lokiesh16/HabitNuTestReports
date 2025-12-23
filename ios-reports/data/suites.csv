@@ -1,3 +1,2 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","20790","test_add_apple_health_data","tests.userJourneySanity","2025-12-23","broken","2025-12-23","TestAppleDevice","test_appleDevice","",""
-"","54026","test_setuoHealthData_sync","tests.userJourneySanity","2025-12-23","passed","2025-12-23","TestAppleDevice","test_appleDevice","",""
+"","0","test_userlogin","tests.userJourneySanity","2025-12-23","broken","2025-12-23","TestUserJourneySanity","test_sanity","",""
