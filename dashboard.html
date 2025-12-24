@@ -82,9 +82,17 @@
 </table>
 
 <script>
-let CURRENT_REPORT = 'web-report';
+// let CURRENT_REPORT = 'web-report';
+// const MAX_RUNS = 10;
+// let chart;
+const GITHUB_OWNER = 'lokiesh16';
+const GITHUB_REPO = 'HabitNuTestReports';
+const BRANCH = 'gh-pages';
 const MAX_RUNS = 10;
+
+let CURRENT_REPORT = 'web-report';
 let chart;
+
 
 /* ---------- Helpers ---------- */
 
@@ -121,8 +129,33 @@ function collectStats(node, stats) {
 
 /* ---------- Main ---------- */
 
+async function fetchRuns(reportDir) {
+  const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${reportDir}?ref=${BRANCH}`;
+
+  const res = await fetch(url);
+  if (!res.ok) {
+    throw new Error(`Failed to fetch ${reportDir}`);
+  }
+
+  const items = await res.json();
+
+  return items
+    .filter(item =>
+      item.type === 'dir' &&
+      /^\d{4}-\d{2}-\d{2}_\d{2}-\d{2}-\d{2}$/.test(item.name)
+    )
+    .map(item => ({
+      run: item.name,
+      date: parseRunDate(item.name)
+    }))
+    .sort((a, b) => a.date - b.date)
+    .slice(-MAX_RUNS);
+}
+
+
 async function loadDashboard() {
-  const runs = await fetch(`${CURRENT_REPORT}/runs.json`).then(r => r.json());
+  // const runs = await fetchRuns(`${CURRENT_REPORT}/runs.json`);
+  const runs = await fetchRuns(CURRENT_REPORT);
 
   const sortedRuns = runs
     .map(run => ({ run, date: parseRunDate(run) }))
