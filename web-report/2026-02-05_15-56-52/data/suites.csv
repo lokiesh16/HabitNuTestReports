@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Thu Feb 05 15:56:49 UTC 2026","Thu Feb 05 15:56:49 UTC 2026","50","tests.PlayWrightTests.UserFacingPortal","test_discussion","TestDiscussionEmoji","","","test_mypost_onhover_allemoji[chromium]",""
+"passed","Thu Feb 05 15:56:43 UTC 2026","Thu Feb 05 15:56:49 UTC 2026","6327","tests.PlayWrightTests.UserFacingPortal","test_discussion","TestDiscussionEmoji","","","test_discuss_onhover_allemoji[chromium]",""
+"broken","Thu Feb 05 15:56:49 UTC 2026","Thu Feb 05 15:56:49 UTC 2026","1","tests.PlayWrightTests.UserFacingPortal","test_discussion","TestDiscussionEmoji","","","test_pinpost_onhover_allemoji[chromium]",""
+"passed","Thu Feb 05 15:56:36 UTC 2026","Thu Feb 05 15:56:43 UTC 2026","7133","tests.PlayWrightTests.UserFacingPortal","test_discussion","TestDiscussionEmoji","","","test_discuss_emoji[chromium]",""
