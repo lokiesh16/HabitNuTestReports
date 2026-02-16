@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Mon Feb 16 11:59:35 UTC 2026","Mon Feb 16 11:59:35 UTC 2026","0","tests.APITests.Web_App_tests","test_AI_Chatbot","TestAI_Chatbot","","","Validate list of user chats in a session","Test fetching session chats and validating the response structure."
+"broken","Mon Feb 16 11:59:35 UTC 2026","Mon Feb 16 11:59:35 UTC 2026","0","tests.APITests.Web_App_tests","test_AI_Chatbot","TestAI_Chatbot","","","Validate deleting chats in a specific session and verifying deletion","Test deleting chats in a specific session and validating deletion."
+"broken","Mon Feb 16 11:59:35 UTC 2026","Mon Feb 16 11:59:35 UTC 2026","1","tests.APITests.Web_App_tests","test_AI_Chatbot","TestAI_Chatbot","","","Validate all the chat sessions of a user",""
+"broken","Mon Feb 16 11:59:35 UTC 2026","Mon Feb 16 11:59:35 UTC 2026","1","tests.APITests.Web_App_tests","test_AI_Chatbot","TestAI_Chatbot","","","Validate AI chatbot should ask for confirmation before logging food",""
+"broken","Mon Feb 16 11:59:29 UTC 2026","Mon Feb 16 11:59:32 UTC 2026","2346","tests.APITests.Web_App_tests","test_AI_Chatbot","TestAI_Chatbot","","","Validate AI chatbot can respond to user messages",""
+"broken","Mon Feb 16 11:59:32 UTC 2026","Mon Feb 16 11:59:35 UTC 2026","3505","tests.APITests.Web_App_tests","test_AI_Chatbot","TestAI_Chatbot","","","Validate AI chatbot can log food entries and only upon confirmation",""
