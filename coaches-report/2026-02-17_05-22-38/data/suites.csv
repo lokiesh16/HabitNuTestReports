@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Tue Feb 17 05:20:33 UTC 2026","Tue Feb 17 05:21:34 UTC 2026","60567","Suite","SingleClassRun","CoachesPortal.LearnModule.Learn","CoachesPortal.LearnModule.Learn","verifyAdminModuleIsAvailable","Verify CustomerAdmin can click on admin option from profile Icon",""
+"broken","Tue Feb 17 05:21:34 UTC 2026","Tue Feb 17 05:21:54 UTC 2026","20075","Suite","SingleClassRun","CoachesPortal.LearnModule.Learn","CoachesPortal.LearnModule.Learn","verifyLandingPageWhichIsProgramsHeadlined","Verify CustomerAdmin now lands on Course configuration page (Programs)",""
+"broken","Tue Feb 17 05:20:33 UTC 2026","Tue Feb 17 05:20:33 UTC 2026","4","Suite","SingleClassRun","CoachesPortal.LearnModule.Learn","CoachesPortal.LearnModule.Learn","setup","setup",""
