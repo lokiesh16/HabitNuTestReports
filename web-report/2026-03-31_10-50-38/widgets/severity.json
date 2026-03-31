@@ -1,0 +1,1 @@
+[{"uid":"f5e001161d100d6e","name":"test_paywall_subscription_days[chromium]","time":{"start":1774954086651,"stop":1774954220874,"duration":134223},"status":"passed","severity":"normal"},{"uid":"26fc0f23290c91cc","name":"test_paywall_changing_program[chromium]","time":{"start":1774954220878,"stop":1774954236049,"duration":15171},"status":"passed","severity":"normal"}]
