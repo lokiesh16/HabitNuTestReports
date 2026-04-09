@@ -1,0 +1,40 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Thu Apr 09 09:20:10 UTC 2026","Thu Apr 09 09:20:10 UTC 2026","0","tests.PlayWrightTests.CoachFacingPortal","test_Appointment_on_board","","","","test_TC011_join_by_habitnu_meet[chromium]","Join Now opens the meeting URL in a new tab."
+"failed","Thu Apr 09 09:18:55 UTC 2026","Thu Apr 09 09:18:55 UTC 2026","0","tests.PlayWrightTests.CoachFacingPortal","test_Appointment_on_board","","","","test_TC001_dashboard_renders_correctly[chromium]","Section visible, badge visible, all 3 filters visible, Today filter active by default."
+"failed","Thu Apr 09 09:20:11 UTC 2026","Thu Apr 09 09:20:11 UTC 2026","0","tests.PlayWrightTests.CoachFacingPortal","test_Appointment_on_board","","","","test_TC017_loading_state_on_slow_network[chromium]","Verifies 'Loading appointments...' appears then disappears under throttled network.
+
+    If the loading state resolves before Playwright can observe it (e.g. warm cache),
+    the test still passes — we only require the final state shows no spinner.
+    "
+"failed","Thu Apr 09 09:20:11 UTC 2026","Thu Apr 09 09:20:11 UTC 2026","0","tests.PlayWrightTests.CoachFacingPortal","test_Appointment_on_board","","","","test_TC018_long_title_truncation[chromium]","A card with a title >80 chars must not overflow its container.
+
+    A long-title meeting is seeded in create_auth_state so this test always runs.
+    We search for the seeded title by scanning each card's full text content,
+    which avoids being brittle about which child element carries the title.
+    "
+"failed","Thu Apr 09 09:20:10 UTC 2026","Thu Apr 09 09:20:10 UTC 2026","0","tests.PlayWrightTests.CoachFacingPortal","test_Appointment_on_board","","","","test_TC008_join_card_workflow[chromium]","Join button count==card count, clicking opens modal, modal content matches card."
+"failed","Thu Apr 09 09:20:10 UTC 2026","Thu Apr 09 09:20:10 UTC 2026","0","tests.PlayWrightTests.CoachFacingPortal","test_Appointment_on_board","","","","test_TC013_copy_link_functionality[chromium]","Clipboard must contain a URL after clicking Copy Link in the modal."
+"failed","Thu Apr 09 09:20:12 UTC 2026","Thu Apr 09 09:20:12 UTC 2026","0","tests.PlayWrightTests.CoachFacingPortal","test_Appointment_on_board","","","","test_TC024_exact_midnight_boundary[chromium]","A 12:00 AM meeting seeded for tomorrow must appear in the This Week list."
+"failed","Thu Apr 09 09:20:11 UTC 2026","Thu Apr 09 09:20:11 UTC 2026","0","tests.PlayWrightTests.CoachFacingPortal","test_Appointment_on_board","","","","test_TC015_card_display_correctness[chromium]","TC015: No Today card is a past meeting. TC021: Times are in 12-hour AM/PM format."
+"failed","Thu Apr 09 09:20:11 UTC 2026","Thu Apr 09 09:20:11 UTC 2026","0","tests.PlayWrightTests.CoachFacingPortal","test_Appointment_on_board","","","","test_TC016_empty_state_display[chromium]","When badge==0 the section stays visible with no card elements in DOM.
+    
+    Uses ALT_COHORT (DailyStandUp_Cohort) which has 0 Today appointments,
+    so this test always runs regardless of DEFAULT_COHORT seeded meetings.
+    "
+"failed","Thu Apr 09 09:20:11 UTC 2026","Thu Apr 09 09:20:11 UTC 2026","0","tests.PlayWrightTests.CoachFacingPortal","test_Appointment_on_board","","","","test_TC020_scrollable_month_list[chromium]","Page body must not stretch infinitely when many appointments are shown."
+"failed","Thu Apr 09 09:20:10 UTC 2026","Thu Apr 09 09:20:10 UTC 2026","0","tests.PlayWrightTests.CoachFacingPortal","test_Appointment_on_board","","","","test_TC007_accordion_collapse_expand[chromium]","Chevron toggle collapses then re-expands. Section must stay visible throughout."
+"failed","Thu Apr 09 09:20:12 UTC 2026","Thu Apr 09 09:20:12 UTC 2026","0","tests.PlayWrightTests.CoachFacingPortal","test_Appointment_on_board","","","","test_TC023_post_midnight_early_morning_indexing[chromium]","12:xx AM cards must appear at the top of their day's appointment list.
+
+    A 12:00 AM meeting is seeded for tomorrow. This Week always includes tomorrow,
+    so the midnight card appears. We verify it exists and is not the last item.
+    "
+"failed","Thu Apr 09 09:20:12 UTC 2026","Thu Apr 09 09:20:12 UTC 2026","0","tests.PlayWrightTests.CoachFacingPortal","test_Appointment_on_board","","","","test_TC025_badge_counts_overnight_sessions[chromium]","Badge count must equal the number of visible cards (including overnight sessions)."
+"failed","Thu Apr 09 09:20:10 UTC 2026","Thu Apr 09 09:20:10 UTC 2026","0","tests.PlayWrightTests.CoachFacingPortal","test_Appointment_on_board","","","","test_TC004_filter_tabs_and_badge[chromium]","Badge==cards for all 3 filters; Week and Month mark active; Week>=Today."
+"failed","Thu Apr 09 09:20:10 UTC 2026","Thu Apr 09 09:20:10 UTC 2026","0","tests.PlayWrightTests.CoachFacingPortal","test_Appointment_on_board","","","","test_TC014_cohort_dropdown_refreshes_list[chromium]","Switching the cohort dropdown refreshes the appointment list."
+"failed","Thu Apr 09 09:20:09 UTC 2026","Thu Apr 09 09:20:09 UTC 2026","0","tests.PlayWrightTests.CoachFacingPortal","test_Appointment_on_board","","","","test_TC003_badge_count_matches_today_cards[chromium]","<span class='count'> must equal the number of visible appointment cards."
+"failed","Thu Apr 09 09:20:11 UTC 2026","Thu Apr 09 09:20:11 UTC 2026","0","tests.PlayWrightTests.CoachFacingPortal","test_Appointment_on_board","","","","test_overnight_meeting_in_today[chromium]","An 11:30 PM cross-midnight session must appear in the Today view. (covers TC019 + TC022)
+
+    A meeting seeded at 11:30 PM tonight (60-min, ending 12:30 AM) is created at setup.
+    The Today filter must include it because the session starts today.
+    Falls back to scanning live 11:xx PM cards if the suite ran after 11:00 PM CDT.
+    "
