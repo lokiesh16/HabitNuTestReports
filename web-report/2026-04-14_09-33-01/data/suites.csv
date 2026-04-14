@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Tue Apr 14 09:32:57 UTC 2026","Tue Apr 14 09:32:57 UTC 2026","535","tests.APITests.CoachesPortal","test_Reports","TestReports","","","test_cohort_data_report",""
+"failed","Tue Apr 14 09:32:57 UTC 2026","Tue Apr 14 09:32:58 UTC 2026","370","tests.APITests.CoachesPortal","test_Reports","TestReports","","","test_participantEnrollment_report",""
