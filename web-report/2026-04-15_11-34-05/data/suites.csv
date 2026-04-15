@@ -1,0 +1,10 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Apr 15 11:33:34 UTC 2026","Wed Apr 15 11:33:45 UTC 2026","10739","tests.PlayWrightTests.CoachFacingPortal","test_dsme_claims","TestDSMEClaims","","","test_edit_claim_insured_information[chromium]","Edit the recently generated claim: set Type=Medicare, Plan=IL Medicare Part B,
+        Member ID=2H04N77CF73, save, close, and verify payer is updated in the claims list."
+"passed","Wed Apr 15 11:33:04 UTC 2026","Wed Apr 15 11:33:23 UTC 2026","18887","tests.PlayWrightTests.CoachFacingPortal","test_dsme_claims","TestDSMEClaims","","","test_navigate_to_interaction_and_group_interaction[chromium]","Coach can navigate to the user's Interaction tab and see the Group Interaction section."
+"passed","Wed Apr 15 11:33:23 UTC 2026","Wed Apr 15 11:33:30 UTC 2026","7595","tests.PlayWrightTests.CoachFacingPortal","test_dsme_claims","TestDSMEClaims","","","test_create_group_session_and_generate_claim[chromium]","Create a 30-min group session via dropdown with a unique date, check item, generate claim,
+        and verify the circle status changes from red to green."
+"passed","Wed Apr 15 11:33:45 UTC 2026","Wed Apr 15 11:33:57 UTC 2026","12067","tests.PlayWrightTests.CoachFacingPortal","test_dsme_claims","TestDSMEClaims","","","test_submit_claim_and_view_history[chromium]","Submit the recently saved claim and verify claim history contains entries."
+"passed","Wed Apr 15 11:33:30 UTC 2026","Wed Apr 15 11:33:34 UTC 2026","3929","tests.PlayWrightTests.CoachFacingPortal","test_dsme_claims","TestDSMEClaims","","","test_recently_generated_claim_visible_in_claims[chromium]","Navigate to Claims and verify the recently generated claim appears with 'Draft' status."
+"passed","Wed Apr 15 11:33:57 UTC 2026","Wed Apr 15 11:33:58 UTC 2026","1063","tests.PlayWrightTests.CoachFacingPortal","test_dsme_claims","TestDSMEClaims","","","test_ar_report_lists_insurance_claim[chromium]","Navigate to AR Report and verify the recently submitted Medicare claim
+        is reflected in the Insurance row with a non-zero amount."
