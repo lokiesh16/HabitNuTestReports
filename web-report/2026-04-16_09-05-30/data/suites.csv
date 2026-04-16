@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Thu Apr 16 09:04:04 UTC 2026","Thu Apr 16 09:04:24 UTC 2026","20004","tests.PlayWrightTests.CoachFacingPortal","test_cdc_milestone","TestCDCMilestone","","","Validate sessions are extended to 26 for Online modality",""
+"broken","Thu Apr 16 09:04:24 UTC 2026","Thu Apr 16 09:04:44 UTC 2026","20002","tests.PlayWrightTests.CoachFacingPortal","test_cdc_milestone","TestCDCMilestone","","","Validate sessions are extended to 26 for Inperson modality",""
+"broken","Thu Apr 16 09:05:05 UTC 2026","Thu Apr 16 09:05:25 UTC 2026","20003","tests.PlayWrightTests.CoachFacingPortal","test_cdc_milestone","TestCDCMilestone","","","Functionality: log sessions 21-26 and verify core + maintenance split",""
+"broken","Thu Apr 16 09:04:45 UTC 2026","Thu Apr 16 09:05:05 UTC 2026","20002","tests.PlayWrightTests.CoachFacingPortal","test_cdc_milestone","TestCDCMilestone","","","Functionality: log 20 core sessions and verify milestone",""
