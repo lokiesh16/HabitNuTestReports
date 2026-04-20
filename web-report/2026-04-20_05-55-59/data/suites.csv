@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Mon Apr 20 05:55:06 UTC 2026","Mon Apr 20 05:55:54 UTC 2026","47088","tests.APITests.Web_App_tests","test_fitbit","TestFitbit","","","Validating Fitbit device data, for various user timezones where datas are captured correctly without any discrepancies like data duplication",""
