@@ -1,7 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","167137","test_user_is_able_to_view_error_message_forIncorrect_zipcode","tests.userJourneySanity","2025-12-23","passed","2025-12-23","TestUserJourneySanity","test_sanity","",""
-"","26996","test_user_is_able_to_view_and_edit_basic_info","tests.userJourneySanity","2025-12-23","passed","2025-12-23","TestUserJourneySanity","test_sanity","",""
-"","1228","test_user_is_able_to_click_on_profile_avatar","tests.userJourneySanity","2025-12-23","passed","2025-12-23","TestUserJourneySanity","test_sanity","",""
-"","29910","test_userlogin","tests.userJourneySanity","2025-12-23","passed","2025-12-23","TestUserJourneySanity","test_sanity","",""
-"","11210","test_user_is_able_to_view_profile_details","tests.userJourneySanity","2025-12-23","passed","2025-12-23","TestUserJourneySanity","test_sanity","",""
-"","93423","test_user_is_able_to_view_and_edit_contact_info","tests.userJourneySanity","2025-12-23","passed","2025-12-23","TestUserJourneySanity","test_sanity","",""

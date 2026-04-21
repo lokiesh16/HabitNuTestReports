@@ -1,1 +1,0 @@
-[{"uid":"de0ec84639c0b08f","name":"Given user's cohort programDate is updated, When there are 7 days left in the program, Then the paywall banner should be validated successfully","time":{"start":1759078401620,"stop":1759078415201,"duration":13581},"status":"failed","severity":"normal"}]

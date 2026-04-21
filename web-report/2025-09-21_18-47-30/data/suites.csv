@@ -1,7 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sun Sep 21 18:47:10 UTC 2025","Sun Sep 21 18:47:14 UTC 2025","3265","tests.Web_App_tests","test_MyMeals","TestMyMeals","","","test_Create_MyMeals",""
-"passed","Sun Sep 21 18:47:14 UTC 2025","Sun Sep 21 18:47:16 UTC 2025","1312","tests.Web_App_tests","test_MyMeals","TestMyMeals","","","test_editMyMeals",""
-"passed","Sun Sep 21 18:47:16 UTC 2025","Sun Sep 21 18:47:19 UTC 2025","2921","tests.Web_App_tests","test_MyMeals","TestMyMeals","","","test_Log_MyMeal",""
-"passed","Sun Sep 21 18:47:19 UTC 2025","Sun Sep 21 18:47:20 UTC 2025","876","tests.Web_App_tests","test_MyMeals","TestMyMeals","","","test_deleteMyMeals",""
-"passed","Sun Sep 21 18:47:14 UTC 2025","Sun Sep 21 18:47:14 UTC 2025","469","tests.Web_App_tests","test_MyMeals","TestMyMeals","","","test_viewCreated_MY_Meal",""
-"passed","Sun Sep 21 18:47:14 UTC 2025","Sun Sep 21 18:47:14 UTC 2025","464","tests.Web_App_tests","test_MyMeals","TestMyMeals","","","test_validate_createdMyMeal_in_listView",""

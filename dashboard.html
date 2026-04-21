@@ -61,6 +61,7 @@
     <option value="web-report">Web</option>
     <option value="coaches-report">Coaches</option>
     <option value="api-report">API</option>
+    <option value="ios-reports">iOS</option>
   </select>
 </div>
 
@@ -111,6 +112,7 @@ function parseRunDate(run) {
 function getEnvironmentLabel() {
   if (CURRENT_REPORT === 'api-report') return 'api';
   if (CURRENT_REPORT === 'coaches-report') return 'coaches';
+  if (CURRENT_REPORT === 'ios-reports') return 'ios';
   return 'web';
 }
 
@@ -158,7 +160,7 @@ async function loadDashboard() {
   const runs = await fetchRuns(CURRENT_REPORT);
 
   const sortedRuns = runs
-    .map(run => ({ run, date: parseRunDate(run) }))
+    // .map(run => ({ run, date: parseRunDate(run) }))
     .sort((a, b) => a.date - b.date)
     .slice(-MAX_RUNS);
 

@@ -1,2 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Wed Feb 11 05:01:02 UTC 2026","Wed Feb 11 05:01:12 UTC 2026","10103","tests.PlayWrightTests.CoachFacingPortal","test_coach_payer_type","TestPayerType","","","test_edit_disabled[chromium]",""
