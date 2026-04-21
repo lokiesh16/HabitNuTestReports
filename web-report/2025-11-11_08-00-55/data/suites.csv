@@ -1,6 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"skipped","Tue Nov 11 08:00:50 UTC 2025","Tue Nov 11 08:00:50 UTC 2025","0","Suite","SingleClassRun","WebAppSanityPackage.Login","WebAppSanityPackage.Login","testLoginWithInvalidEmailFormat","Verify error for an invalid email format",""
-"skipped","Tue Nov 11 07:58:50 UTC 2025","Tue Nov 11 07:58:50 UTC 2025","1","Suite","SingleClassRun","WebAppSanityPackage.Login","WebAppSanityPackage.Login","testLoginWithInvalidPassword","Verify error for a valid email with an invalid password",""
-"broken","Tue Nov 11 08:00:50 UTC 2025","Tue Nov 11 08:00:50 UTC 2025","1","Suite","SingleClassRun","WebAppSanityPackage.Login","WebAppSanityPackage.Login","setup","setup",""
-"skipped","Tue Nov 11 07:59:50 UTC 2025","Tue Nov 11 07:59:50 UTC 2025","1","Suite","SingleClassRun","WebAppSanityPackage.Login","WebAppSanityPackage.Login","testLoginWithEmptyCredentials","Verify validation errors for empty email and password fields",""
-"skipped","Tue Nov 11 07:57:50 UTC 2025","Tue Nov 11 07:57:50 UTC 2025","1","Suite","SingleClassRun","WebAppSanityPackage.Login","WebAppSanityPackage.Login","testLogout","Verify error for a valid email with an invalid password",""
