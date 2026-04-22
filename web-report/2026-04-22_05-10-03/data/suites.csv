@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Wed Apr 22 05:07:59 UTC 2026","Wed Apr 22 05:08:59 UTC 2026","60001","tests.PlayWrightTests.CoachFacingPortal","test_coach_payer_type","TestPayerType","","","test_payertype_reflected_in_profile[chromium]",""
+"broken","Wed Apr 22 05:04:28 UTC 2026","Wed Apr 22 05:04:43 UTC 2026","15003","tests.PlayWrightTests.CoachFacingPortal","test_coach_payer_type","TestPayerType","","","test_edit_disabled[chromium]",""
+"broken","Wed Apr 22 05:08:59 UTC 2026","Wed Apr 22 05:09:59 UTC 2026","60002","tests.PlayWrightTests.CoachFacingPortal","test_coach_payer_type","TestPayerType","","","test_payertype_reflected_in_user_menu[chromium]",""
+"broken","Wed Apr 22 05:05:58 UTC 2026","Wed Apr 22 05:06:58 UTC 2026","60002","tests.PlayWrightTests.CoachFacingPortal","test_coach_payer_type","TestPayerType","","","test_demographictab_and_payertypetab_payertype_options_matches[chromium]",""
+"broken","Wed Apr 22 05:05:43 UTC 2026","Wed Apr 22 05:05:58 UTC 2026","15003","tests.PlayWrightTests.CoachFacingPortal","test_coach_payer_type","TestPayerType","","","test_limited_payer_participant_edit_in_claim_menu[chromium]",""
+"broken","Wed Apr 22 05:04:43 UTC 2026","Wed Apr 22 05:05:43 UTC 2026","60002","tests.PlayWrightTests.CoachFacingPortal","test_coach_payer_type","TestPayerType","","","test_limited_payer_charge_entry_form[chromium]",""
+"broken","Wed Apr 22 05:06:59 UTC 2026","Wed Apr 22 05:07:59 UTC 2026","60001","tests.PlayWrightTests.CoachFacingPortal","test_coach_payer_type","TestPayerType","","","test_demographictab_and_payertypetab_edit_payertype_options_matches[chromium]",""
