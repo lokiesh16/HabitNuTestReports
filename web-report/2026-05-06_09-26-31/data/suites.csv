@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Wed May 06 09:26:23 UTC 2026","Wed May 06 09:26:24 UTC 2026","542","tests.APITests.Web_App_tests","test_MyMeals","TestMyMeals","","","test_editMyMeals",""
+"failed","Wed May 06 09:26:24 UTC 2026","Wed May 06 09:26:25 UTC 2026","518","tests.APITests.Web_App_tests","test_MyMeals","TestMyMeals","","","test_deleteMyMeals",""
+"failed","Wed May 06 09:26:22 UTC 2026","Wed May 06 09:26:23 UTC 2026","681","tests.APITests.Web_App_tests","test_MyMeals","TestMyMeals","","","test_validate_createdMyMeal_in_listView",""
+"failed","Wed May 06 09:26:18 UTC 2026","Wed May 06 09:26:22 UTC 2026","4419","tests.APITests.Web_App_tests","test_MyMeals","TestMyMeals","","","test_Create_MyMeals",""
+"failed","Wed May 06 09:26:23 UTC 2026","Wed May 06 09:26:23 UTC 2026","406","tests.APITests.Web_App_tests","test_MyMeals","TestMyMeals","","","test_viewCreated_MY_Meal",""
+"failed","Wed May 06 09:26:24 UTC 2026","Wed May 06 09:26:24 UTC 2026","536","tests.APITests.Web_App_tests","test_MyMeals","TestMyMeals","","","test_Log_MyMeal",""
