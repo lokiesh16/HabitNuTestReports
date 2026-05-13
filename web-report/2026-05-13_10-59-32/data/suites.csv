@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed May 13 10:59:28 UTC 2026","Wed May 13 10:59:29 UTC 2026","283","tests.APITests.Web_App_tests","test_new_graphs","TestWeightAPI","","","test_get_weight_data","Test GET weight data from admin-develop with date range."
+"passed","Wed May 13 10:59:28 UTC 2026","Wed May 13 10:59:28 UTC 2026","316","tests.APITests.Web_App_tests","test_new_graphs","TestWeightAPI","","","test_post_weight_with_current_timestamp","Test POST weight data with auto-generated timestamp."
+"passed","Wed May 13 10:59:29 UTC 2026","Wed May 13 10:59:29 UTC 2026","406","tests.APITests.Web_App_tests","test_new_graphs","TestWeightAPI","","","test_delete_weight_data","Test DELETE weight data from admin-develop."
+"passed","Wed May 13 10:59:26 UTC 2026","Wed May 13 10:59:28 UTC 2026","2307","tests.APITests.Web_App_tests","test_new_graphs","TestWeightAPI","","","test_successful_login","Test case for a successful login with valid credentials."
