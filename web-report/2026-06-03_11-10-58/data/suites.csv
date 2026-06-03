@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Jun 03 11:10:34 UTC 2026","Wed Jun 03 11:10:53 UTC 2026","18645","tests.PlayWrightTests.CoachFacingPortal","test_water","TestUserPlaywright","","","test_webapp_water_value[chromium]",""
+"passed","Wed Jun 03 11:10:33 UTC 2026","Wed Jun 03 11:10:33 UTC 2026","425","tests.PlayWrightTests.CoachFacingPortal","test_water","TestUserPlaywright","","","test_check_table_data[chromium]",""
+"passed","Wed Jun 03 11:10:33 UTC 2026","Wed Jun 03 11:10:34 UTC 2026","915","tests.PlayWrightTests.CoachFacingPortal","test_water","TestUserPlaywright","","","test_filter_by_start_date_14_days_ago[chromium]",""
+"passed","Wed Jun 03 11:10:21 UTC 2026","Wed Jun 03 11:10:33 UTC 2026","11964","tests.PlayWrightTests.CoachFacingPortal","test_water","TestUserPlaywright","","","test_access_water[chromium]",""
+"passed","Wed Jun 03 11:10:33 UTC 2026","Wed Jun 03 11:10:33 UTC 2026","8","tests.PlayWrightTests.CoachFacingPortal","test_water","TestUserPlaywright","","","test_validate_start_date[chromium]",""
+"passed","Wed Jun 03 11:10:20 UTC 2026","Wed Jun 03 11:10:21 UTC 2026","702","tests.PlayWrightTests.CoachFacingPortal","test_water","TestUserPlaywright","","","test_login_coach_portal[chromium]",""
