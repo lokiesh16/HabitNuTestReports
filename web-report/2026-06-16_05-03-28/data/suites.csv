@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Tue Jun 16 05:01:46 UTC 2026","Tue Jun 16 05:02:37 UTC 2026","51329","tests.PlayWrightTests.UserFacingPortal","test_paywall_india","TestPaywallIndia","","","test_paywall_subscription_days[chromium]",""
+"broken","Tue Jun 16 05:02:38 UTC 2026","Tue Jun 16 05:03:24 UTC 2026","46837","tests.PlayWrightTests.UserFacingPortal","test_paywall_india","TestPaywallIndia","","","test_paywall_changing_program[chromium]",""
