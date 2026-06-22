@@ -1,0 +1,28 @@
+name: Weekly Allure Track Record Summary
+
+on:
+  schedule:
+    # Runs every Monday morning at 9:00 AM UTC (2:30 PM IST)
+    - cron: '0 9 * * 1'
+  workflow_dispatch: # 🌟 This adds a manual "Play" button so you can run it whenever you want
+
+jobs:
+  capture-report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install Puppeteer and Slack API Components
+        run: npm install puppeteer @slack/web-api
+
+      - name: Execute Resilient Analytics Screenshot Capture Engine
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        run: node weekly_analytics.js
