@@ -4,7 +4,7 @@ const puppeteer = require('puppeteer');
 const { WebClient } = require('@slack/web-api');
 
 // 🔑 1. CONFIGURATION
-const CHANNEL_ID = 'YOUR_SLACK_CHANNEL_ID'; // 👈 Replace with your destination channel ID
+const CHANNEL_ID = 'C0BB1C0RYQ7'; // 👈 Replace with your destination channel ID
 const DASHBOARD_PUBLIC_URL = 'https://lokiesh16.github.io/HabitNuTestReports/weekly-dashboard.html';
 
 if (!process.env.SLACK_BOT_TOKEN) {
