@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Sat Jul 11 05:04:16 UTC 2026","Sat Jul 11 05:04:46 UTC 2026","30049","tests.PlayWrightTests.UserFacingPortal","test_habirecipe_book","TestRecipeBook","","","Verify user can navigate to recipe preferences page",""
+"broken","Sat Jul 11 05:04:46 UTC 2026","Sat Jul 11 05:05:16 UTC 2026","30002","tests.PlayWrightTests.UserFacingPortal","test_habirecipe_book","TestRecipeBook","","","As a user When I click on the Generate New Recipe button, it should take me to Let's Set Your Preferences page and Verify all preference categories are displayed",""
+"passed","Sat Jul 11 05:04:16 UTC 2026","Sat Jul 11 05:04:16 UTC 2026","4","tests.PlayWrightTests.UserFacingPortal","test_habirecipe_book","TestRecipeBook","","","Verify empty state is displayed when no recipes exist",""
+"passed","Sat Jul 11 05:04:05 UTC 2026","Sat Jul 11 05:04:16 UTC 2026","10239","tests.PlayWrightTests.UserFacingPortal","test_habirecipe_book","TestRecipeBook","","","Verify Recipe Book page loads successfully",""
+"passed","Sat Jul 11 05:04:16 UTC 2026","Sat Jul 11 05:04:16 UTC 2026","2","tests.PlayWrightTests.UserFacingPortal","test_habirecipe_book","TestRecipeBook","","","Verify Habi Recipes tab is selected by default",""
+"passed","Sat Jul 11 05:04:16 UTC 2026","Sat Jul 11 05:04:16 UTC 2026","3","tests.PlayWrightTests.UserFacingPortal","test_habirecipe_book","TestRecipeBook","","","Verify Generate New Recipe button is displayed",""
