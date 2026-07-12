@@ -1,6 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"failed","Wed Apr 22 06:06:33 UTC 2026","Wed Apr 22 06:06:49 UTC 2026","15700","tests.PlayWrightTests.CoachFacingPortal","test_plan_names","TestUserPlaywright","","","test_navigating_feature_flags[chromium]",""
-"failed","Wed Apr 22 06:06:55 UTC 2026","Wed Apr 22 06:07:17 UTC 2026","22332","tests.PlayWrightTests.CoachFacingPortal","test_plan_names","TestUserPlaywright","","","test_enable_globally[chromium]",""
-"failed","Wed Apr 22 06:06:49 UTC 2026","Wed Apr 22 06:06:55 UTC 2026","5750","tests.PlayWrightTests.CoachFacingPortal","test_plan_names","TestUserPlaywright","","","test_without_enable_globally[chromium]",""
-"passed","Wed Apr 22 06:06:27 UTC 2026","Wed Apr 22 06:06:33 UTC 2026","6935","tests.PlayWrightTests.CoachFacingPortal","test_plan_names","TestUserPlaywright","","","test_navigating_admin[chromium]",""
-"passed","Wed Apr 22 06:06:26 UTC 2026","Wed Apr 22 06:06:27 UTC 2026","736","tests.PlayWrightTests.CoachFacingPortal","test_plan_names","TestUserPlaywright","","","test_valid_login_on_userPortal[chromium]",""

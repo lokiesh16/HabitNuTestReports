@@ -1,3 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Wed Apr 22 04:18:02 UTC 2026","Wed Apr 22 04:18:17 UTC 2026","14478","tests.PlayWrightTests.UserFacingPortal","test_paywall_india","TestPaywallIndia","","","test_paywall_changing_program[chromium]",""
-"passed","Wed Apr 22 04:16:02 UTC 2026","Wed Apr 22 04:18:02 UTC 2026","120812","tests.PlayWrightTests.UserFacingPortal","test_paywall_india","TestPaywallIndia","","","test_paywall_subscription_days[chromium]",""

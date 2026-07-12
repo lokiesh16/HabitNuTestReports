@@ -1,4 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Wed Apr 22 04:20:31 UTC 2026","Wed Apr 22 04:20:34 UTC 2026","2921","tests.APITests.CoachesPortal","test_dashboardGraphValidation","TestSessionAPI","","","test_open_cohort_dashboard","Login as coach and open cohort dashboard via API."
-"passed","Wed Apr 22 04:20:30 UTC 2026","Wed Apr 22 04:20:31 UTC 2026","388","tests.APITests.CoachesPortal","test_dashboardGraphValidation","TestSessionAPI","","","test_coach_url_reachable","Test that the coach portal URL is reachable (HTTP 200 or 302)."
-"passed","Wed Apr 22 04:20:26 UTC 2026","Wed Apr 22 04:20:30 UTC 2026","4400","tests.APITests.CoachesPortal","test_dashboardGraphValidation","TestSessionAPI","","","test_successful_login_Admin","Test case for a successful login with valid credentials."
