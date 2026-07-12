@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","6605","Verify when user clicks on View Details button, it should navigate to Nutrition Details page","tests.temp.Food","2026-07-12","passed","2026-07-12","TestFoodNutrientViewDetails","test_viewDetails","",""
+"","41553","Verify when nutrient targets/data are updated, the changes are reflected in the Nutrient Details page","tests.temp.Food","2026-07-12","passed","2026-07-12","TestFoodNutrientViewDetails","test_viewDetails","",""
+"Test login functionality with valid credentials","17389","Verify View Details button is present on Food Dashboard page","tests.temp.Food","2026-07-12","passed","2026-07-12","TestFoodNutrientViewDetails","test_viewDetails","",""
+"","9107","Verify user is displayed with nutritional values against nutrient types","tests.temp.Food","2026-07-12","passed","2026-07-12","TestFoodNutrientViewDetails","test_viewDetails","",""
