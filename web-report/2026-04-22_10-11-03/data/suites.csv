@@ -1,5 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Wed Apr 22 10:10:46 UTC 2026","Wed Apr 22 10:10:53 UTC 2026","6665","tests.PlayWrightTests.CoachFacingPortal","test_coaches_discussion","TestCoachesDiscussionEmoji","","","test_coachdiscuss_emoji_buttons_visible[chromium]",""
-"passed","Wed Apr 22 10:10:40 UTC 2026","Wed Apr 22 10:10:46 UTC 2026","6288","tests.PlayWrightTests.CoachFacingPortal","test_coaches_discussion","TestCoachesDiscussionEmoji","","","test_coachdiscuss_onhover_allemoji[chromium]",""
-"broken","Wed Apr 22 10:10:53 UTC 2026","Wed Apr 22 10:10:58 UTC 2026","5002","tests.PlayWrightTests.CoachFacingPortal","test_coaches_discussion","TestCoachesDiscussionEmoji","","","test_coachdiscuss_reaction_dashboard[chromium]",""
-"passed","Wed Apr 22 10:10:35 UTC 2026","Wed Apr 22 10:10:40 UTC 2026","5028","tests.PlayWrightTests.CoachFacingPortal","test_coaches_discussion","TestCoachesDiscussionEmoji","","","test_coachdiscuss_emoji[chromium]",""

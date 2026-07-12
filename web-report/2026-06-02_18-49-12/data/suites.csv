@@ -1,6 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Tue Jun 02 18:48:46 UTC 2026","Tue Jun 02 18:48:59 UTC 2026","12251","tests.APITests.Web_App_tests","test_devices","TestDevices","","","test_sync_withingsData",""
-"passed","Tue Jun 02 18:48:59 UTC 2026","Tue Jun 02 18:48:59 UTC 2026","20","tests.APITests.Web_App_tests","test_devices","TestDevices","","","test_verify_weight_synced_withingsData",""
-"passed","Tue Jun 02 18:47:50 UTC 2026","Tue Jun 02 18:48:46 UTC 2026","56564","tests.APITests.Web_App_tests","test_devices","TestDevices","","","test_add_weight_withings_web",""
-"passed","Tue Jun 02 18:49:08 UTC 2026","Tue Jun 02 18:49:09 UTC 2026","1106","tests.APITests.Web_App_tests","test_devices","TestDevices","","","test_disconnectWithings",""
-"passed","Tue Jun 02 18:48:59 UTC 2026","Tue Jun 02 18:49:08 UTC 2026","9117","tests.APITests.Web_App_tests","test_devices","TestDevices","","","test_validate_synced_time",""

@@ -1,2 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sun Apr 19 13:11:07 UTC 2026","Sun Apr 19 13:16:04 UTC 2026","297063","tests.APITests.Web_App_tests","test_fitbit","TestFitbit","","","test_add_validate_fitbit_device",""
