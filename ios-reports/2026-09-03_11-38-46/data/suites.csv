@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","29490","Adding a weight updates the gauge's current value","tests.temp.New_Dashboard","2026-09-03","passed","2026-09-03","TestWeightWidgetIos","test_weight_widget","",""
+"","5602","Adding a weight shows up as the top Recent Logs row","tests.temp.New_Dashboard","2026-09-03","passed","2026-09-03","TestWeightWidgetIos","test_weight_widget","",""
+"","2","Adding a weight keeps diff equal to |current - target|","tests.temp.New_Dashboard","2026-09-03","passed","2026-09-03","TestWeightWidgetIos","test_weight_widget","",""
+"","0","Adding a weight does not move the starting value","tests.temp.New_Dashboard","2026-09-03","passed","2026-09-03","TestWeightWidgetIos","test_weight_widget","",""
+"","306","Widget diff equals |current - target| on load","tests.temp.New_Dashboard","2026-09-03","passed","2026-09-03","TestWeightWidgetIos","test_weight_widget","",""
+"","10667","Widget current value is present and positive on load","tests.temp.New_Dashboard","2026-09-03","passed","2026-09-03","TestWeightWidgetIos","test_weight_widget","",""
+"","371","Widget target value is present and positive on load","tests.temp.New_Dashboard","2026-09-03","passed","2026-09-03","TestWeightWidgetIos","test_weight_widget","",""
