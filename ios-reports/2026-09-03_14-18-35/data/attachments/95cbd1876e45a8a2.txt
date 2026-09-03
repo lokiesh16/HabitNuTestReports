@@ -1,0 +1,9 @@
+second click on icon was not required Message: An element could not be located on the page using the given search parameters.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at XCUITestDriver.doNativeFind (/Users/lokesh/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.js:143:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at XCUITestDriver.findNativeElementOrElements (/Users/lokesh/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.js:97:12)
+    at XCUITestDriver.findElOrEls (/Users/lokesh/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.js:24:14)
+    at XCUITestDriver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at XCUITestDriver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
