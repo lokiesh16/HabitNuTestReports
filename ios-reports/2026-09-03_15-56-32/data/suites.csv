@@ -1,0 +1,143 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Distinguishes two failure modes a pause/resume implementation
+commonly has: (a) pausing doesn't actually stop the clock (timer
+keeps ticking in the background), or (b) resuming resets to the
+full duration instead of continuing from the paused value. Neither
+has been explicitly covered by the existing tests — reset-during-
+phase tests only check RESET, not pause.","0","Pause freezes the countdown; resume continues from where it left off","tests.temp.New_Dashboard","2026-09-03","broken","2026-09-03","TestBreathingWidgetIos","test_breathe","",""
+"Confirmed via XML dump (2026-08-08): tapping Edit Time swaps the
+READY circle for an inline stepper — Decrease/Increase buttons plus
+a live ""N minutes"" value and a Done button.
+
+The exact min/max the app enforces is NOT confirmed yet — this
+test doesn't assert a specific cap because that would just encode
+a guess. Instead it discovers the floor and ceiling by tapping
+until the value stops moving, and asserts basic sanity: the value
+never goes non-positive, and it does eventually stop changing
+(i.e. some bound exists) rather than incrementing forever.
+
+TODO once the real min/max is confirmed with product/design:
+replace the discovered floor/ceiling checks below with hard
+assertions against the actual spec'd values.
+","0","Edit Time accepts a valid range for Box Breathing","tests.temp.New_Dashboard","2026-09-03","broken","2026-09-03","TestBreathingWidgetIos","test_breathe","",""
+"Measures actual behavior rather than asserting a guessed
+expectation. A prior version hard-coded `expected_after =
+remaining_before - 5`, assuming the countdown continues on a
+wall-clock basis while backgrounded — but a live run showed the
+countdown dropping only ~1s across ~5+ real seconds backgrounded,
+which is the OPPOSITE of round-trip measurement noise (noise would
+make elapsed time look bigger, not smaller). That's a real signal:
+the countdown likely pauses (or nearly freezes) while backgrounded.
+
+Whether that's correct depends on product intent — a meditation
+app pausing your session when you leave is a defensible design
+choice, not obviously a bug. This test measures real elapsed wall
+time precisely and reports both the ""paused"" and ""kept ticking""
+hypotheses; it only fails on genuinely unambiguous problems
+(time going backwards/increasing, or a session that silently
+resets to READY instead of resuming in some state).
+
+TODO once intended behavior is confirmed with product/design:
+replace the diagnostic prints below with a real hard assertion
+against whichever behavior is correct.
+","0","Backgrounding mid-session preserves accurate time","tests.temp.New_Dashboard","2026-09-03","broken","2026-09-03","TestBreathingWidgetIos","test_breathe","",""
+"","0","Reset during HOLD returns to READY","tests.temp.New_Dashboard","2026-09-03","broken","2026-09-03","TestBreathingWidgetIos","test_breathe","",""
+"","0","Switching technique while paused updates selection","tests.temp.New_Dashboard","2026-09-03","broken","2026-09-03","TestBreathingWidgetIos","test_breathe","",""
+"","0","Verify phase timing accuracy for Box Breathing","tests.temp.New_Dashboard","2026-09-03","broken","2026-09-03","TestBreathingWidgetIos","test_breathe","",""
+"The overall session Time (e.g. Box Breathing's 4m) is much
+longer than one pattern cycle (16s for 4·4·4·4) — so the pattern
+must repeat. This confirms it actually loops back to the first
+phase rather than stalling, erroring, or silently stopping after
+one pass. Uses Equal Breathing (shortest pattern) to keep this
+fast.","0","Breathing pattern loops back to the first phase after one full cycle","tests.temp.New_Dashboard","2026-09-03","broken","2026-09-03","TestBreathingWidgetIos","test_breathe","",""
+"Ties two independently-authored pieces of app text together:
+the technique row's own label (e.g. ""...4m"") and the actual
+countdown shown once that technique is selected. These SHOULD
+always agree — if a technique's default duration is ever changed
+in one place and not the other, this catches it. Low flake risk:
+READY is a static state, no timing race involved.","0","Displayed default Time matches the technique row's stated duration for Equal Breathing","tests.temp.New_Dashboard","2026-09-03","broken","2026-09-03","TestBreathingWidgetIos","test_breathe","",""
+"","0","Verify phase timing accuracy for 4-7-8 Technique","tests.temp.New_Dashboard","2026-09-03","broken","2026-09-03","TestBreathingWidgetIos","test_breathe","",""
+"Documents current behavior — flip the assertion once intended
+behavior (reset vs. resume) is confirmed with product.","0","App kill and relaunch behavior (documents current state)","tests.temp.New_Dashboard","2026-09-03","broken","2026-09-03","TestBreathingWidgetIos","test_breathe","",""
+"Ties two independently-authored pieces of app text together:
+the technique row's own label (e.g. ""...4m"") and the actual
+countdown shown once that technique is selected. These SHOULD
+always agree — if a technique's default duration is ever changed
+in one place and not the other, this catches it. Low flake risk:
+READY is a static state, no timing race involved.","0","Displayed default Time matches the technique row's stated duration for 4-7-8 Technique","tests.temp.New_Dashboard","2026-09-03","broken","2026-09-03","TestBreathingWidgetIos","test_breathe","",""
+"CONFIRMED (2026-08-08, live Inspector sequence on Coherent
+Breathing): the counter's ""current"" directly matches the active
+phase's 1-indexed position in the cycle — READY shows the ""—""
+placeholder, INHALE (phase 1 of 2) shows ""1/2 PHASE"", EXHALE
+(phase 2 of 2) shows ""2/2 PHASE"". No off-by-one: current reflects
+the phase that's ACTIVE RIGHT NOW, not the one about to start.
+
+This asserts the exact expected value at each phase (current ==
+that phase's position in the pattern), not just ""increments
+consistently"" — the earlier version hedged on which convention
+was in use; that's no longer necessary now it's been observed
+directly.
+","0","Phase counter total and progression are correct for Equal Breathing","tests.temp.New_Dashboard","2026-09-03","broken","2026-09-03","TestBreathingWidgetIos","test_breathe","",""
+"UI state machines are a common source of double-tap bugs (e.g.
+both taps registering as ""start"", leaving two competing timers).
+This doesn't assert a specific end state (start-then-pause could
+legitimately land as either playing or paused depending on how
+fast the taps land) — it asserts the app doesn't end up in a
+broken state: phase label must be one of the four known values,
+and the countdown must still be readable without raising.","0","Rapid double-tap on play/pause does not corrupt session state","tests.temp.New_Dashboard","2026-09-03","broken","2026-09-03","TestBreathingWidgetIos","test_breathe","",""
+"CONFIRMED (2026-08-08, live Inspector sequence on Coherent
+Breathing): the counter's ""current"" directly matches the active
+phase's 1-indexed position in the cycle — READY shows the ""—""
+placeholder, INHALE (phase 1 of 2) shows ""1/2 PHASE"", EXHALE
+(phase 2 of 2) shows ""2/2 PHASE"". No off-by-one: current reflects
+the phase that's ACTIVE RIGHT NOW, not the one about to start.
+
+This asserts the exact expected value at each phase (current ==
+that phase's position in the pattern), not just ""increments
+consistently"" — the earlier version hedged on which convention
+was in use; that's no longer necessary now it's been observed
+directly.
+","0","Phase counter total and progression are correct for 4-7-8 Technique","tests.temp.New_Dashboard","2026-09-03","broken","2026-09-03","TestBreathingWidgetIos","test_breathe","",""
+"","0","Verify phase timing accuracy for Equal Breathing","tests.temp.New_Dashboard","2026-09-03","broken","2026-09-03","TestBreathingWidgetIos","test_breathe","",""
+"CONFIRMED (2026-08-08, live Inspector sequence on Coherent
+Breathing): the counter's ""current"" directly matches the active
+phase's 1-indexed position in the cycle — READY shows the ""—""
+placeholder, INHALE (phase 1 of 2) shows ""1/2 PHASE"", EXHALE
+(phase 2 of 2) shows ""2/2 PHASE"". No off-by-one: current reflects
+the phase that's ACTIVE RIGHT NOW, not the one about to start.
+
+This asserts the exact expected value at each phase (current ==
+that phase's position in the pattern), not just ""increments
+consistently"" — the earlier version hedged on which convention
+was in use; that's no longer necessary now it's been observed
+directly.
+","0","Phase counter total and progression are correct for Coherent Breathing","tests.temp.New_Dashboard","2026-09-03","broken","2026-09-03","TestBreathingWidgetIos","test_breathe","",""
+"","0","Volume toggle does not affect timer","tests.temp.New_Dashboard","2026-09-03","broken","2026-09-03","TestBreathingWidgetIos","test_breathe","",""
+"Ties two independently-authored pieces of app text together:
+the technique row's own label (e.g. ""...4m"") and the actual
+countdown shown once that technique is selected. These SHOULD
+always agree — if a technique's default duration is ever changed
+in one place and not the other, this catches it. Low flake risk:
+READY is a static state, no timing race involved.","0","Displayed default Time matches the technique row's stated duration for Box Breathing","tests.temp.New_Dashboard","2026-09-03","broken","2026-09-03","TestBreathingWidgetIos","test_breathe","",""
+"Ties two independently-authored pieces of app text together:
+the technique row's own label (e.g. ""...4m"") and the actual
+countdown shown once that technique is selected. These SHOULD
+always agree — if a technique's default duration is ever changed
+in one place and not the other, this catches it. Low flake risk:
+READY is a static state, no timing race involved.","0","Displayed default Time matches the technique row's stated duration for Coherent Breathing","tests.temp.New_Dashboard","2026-09-03","broken","2026-09-03","TestBreathingWidgetIos","test_breathe","",""
+"","0","Verify phase timing accuracy for Coherent Breathing","tests.temp.New_Dashboard","2026-09-03","broken","2026-09-03","TestBreathingWidgetIos","test_breathe","",""
+"","0","Switching technique mid-session resets cleanly","tests.temp.New_Dashboard","2026-09-03","broken","2026-09-03","TestBreathingWidgetIos","test_breathe","",""
+"","0","Reset during INHALE returns to READY","tests.temp.New_Dashboard","2026-09-03","broken","2026-09-03","TestBreathingWidgetIos","test_breathe","",""
+"CONFIRMED (2026-08-08, live Inspector sequence on Coherent
+Breathing): the counter's ""current"" directly matches the active
+phase's 1-indexed position in the cycle — READY shows the ""—""
+placeholder, INHALE (phase 1 of 2) shows ""1/2 PHASE"", EXHALE
+(phase 2 of 2) shows ""2/2 PHASE"". No off-by-one: current reflects
+the phase that's ACTIVE RIGHT NOW, not the one about to start.
+
+This asserts the exact expected value at each phase (current ==
+that phase's position in the pattern), not just ""increments
+consistently"" — the earlier version hedged on which convention
+was in use; that's no longer necessary now it's been observed
+directly.
+","0","Phase counter total and progression are correct for Box Breathing","tests.temp.New_Dashboard","2026-09-03","broken","2026-09-03","TestBreathingWidgetIos","test_breathe","",""
