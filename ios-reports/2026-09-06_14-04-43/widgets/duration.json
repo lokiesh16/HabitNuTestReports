@@ -1,0 +1,1 @@
+[{"uid":"7e0cd77a82d50503","name":"[PIPELINE VALIDATION] sample failed case (expected)","time":{"start":1788703458350,"stop":1788703460350,"duration":2000},"status":"failed","severity":"normal"},{"uid":"c1b91d47e2b0327d","name":"[PIPELINE VALIDATION] sample passed case","time":{"start":1788703456350,"stop":1788703458350,"duration":2000},"status":"passed","severity":"normal"}]
