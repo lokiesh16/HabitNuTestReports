@@ -1,1 +1,0 @@
-{'current': 167.6, 'start': 150, 'unit': 'lbs', 'target': 100.1, 'diff': 67.5}
