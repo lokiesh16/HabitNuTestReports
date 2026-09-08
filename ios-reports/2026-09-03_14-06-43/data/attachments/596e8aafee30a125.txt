@@ -1,1 +1,0 @@
-**/XCUIElementTypeButton[`name == "Sep 1, 2026 – Sep 30, 2026"`]
