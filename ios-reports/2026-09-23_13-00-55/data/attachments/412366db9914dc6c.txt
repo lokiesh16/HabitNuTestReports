@@ -1,0 +1,1 @@
+Connecting to MongoDB with connection string: mongodb://adminconsole:***REMOVED***@habitnu-shard-00-00.tsbpd.mongodb.net:27017,habitnu-shard-00-01.tsbpd.mongodb.net:27017,habitnu-shard-00-02.tsbpd.mongodb.net:27017/habitnu-staging?ssl=true&replicaSet=atlas-ud7nw2-shard-0&authSource=admin&retryWrites=true&w=majority
