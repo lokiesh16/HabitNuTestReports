@@ -1,0 +1,1 @@
+zipcode validation, error_locator: Zip code must be either 6 digits (XXXXXX)

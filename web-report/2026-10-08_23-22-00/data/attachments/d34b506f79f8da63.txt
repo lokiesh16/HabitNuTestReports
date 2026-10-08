@@ -1,0 +1,3 @@
+{'_id': ObjectId('6ac802c902da6291995bd519'), 'subject': 'DisucussionReaction test', 'description': 'test', 'cohort_id': ObjectId('6628a1007a7765000169da70'), 'user_id': '6a9915a0d641c9c06b9b5c1c', 'updated_at': datetime.datetime(2026, 10, 8, 20, 53, 29, 453000), 'created_at': datetime.datetime(2026, 10, 8, 20, 53, 29, 453000)}
+Deleted documents count: 1
+auth_token: LOKAESH 2eaZUpUOt6iHtD6QIfCraTWPNE-57zFa_yD7NAbzz5AYc4FZriZO_UUhVhT790DqicM4-TlOEFSeYhVAJ8chkIUOYDDGojWQZ6tfEtusjqFW9sH7twV9SIQkKNG0CpAv0Hy9FU-PtGRpHPuhKwvOZLjHPlbT3OA3lXHWz2J-tD8
