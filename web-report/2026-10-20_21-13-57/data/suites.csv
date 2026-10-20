@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Tue Oct 20 21:12:47 UTC 2026","Tue Oct 20 21:13:40 UTC 2026","53020","tests.PlayWrightTests.UserFacingPortal.HomePage","test_zz_streak_diag","","","","test_streak_timezone_variants[chromium]",""
