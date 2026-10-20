@@ -1,0 +1,1 @@
+response_data[0]['wl_percent']:-11.5
