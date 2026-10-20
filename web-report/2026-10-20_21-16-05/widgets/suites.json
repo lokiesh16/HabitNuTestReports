@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"8d2ce9005578dea05ea3c4e31a50f6ae","name":"tests.PlayWrightTests.UserFacingPortal.Health","statistic":{"failed":0,"broken":0,"skipped":0,"passed":5,"unknown":0,"total":5}},{"uid":"58d662439c8280dc8cac0a7b1b08dfbc","name":"tests.PlayWrightTests.UserFacingPortal.Habits","statistic":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2}}]}
