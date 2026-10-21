@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Oct 21 11:39:10 UTC 2026","Wed Oct 21 11:39:18 UTC 2026","7469","tests.PlayWrightTests.UserFacingPortal.Health","test_blood_sugar","TestBloodSugarBoundaryValidation","","","Blood Sugar Validation: entering a value of exactly 999 (the max boundary) is accepted",""
