@@ -1,0 +1,250 @@
+['foods', 'web_elements', 'healthPrompts', 'water_intake_buckets', 'maritial_statuses', 'discussion_comments', 'notifications_triggers', 'health_systems', 'tokens', 'mindfulness_activities', 'onboarding_slot_bookings', 'cdc_enrollment_sources', 'report_builder_exports', 'coach_communication_details', 'cohorts', 'release_email_draft_versions', 'discussions', 'healthInputs', 'dashboards', 'session_definitions', 'release_email_images', 'participant_sessions', 'timezones', 'org_codes', 'referral_saved_views', 'images', 'payment_webhook_notifications', 'gut_health_reports', 'videoSchedules', 'habitnu_ai_blood_sugar_insights', 'payment_plans', 'notification_settings', 'habitnu_ai_blood_sugar_insights_tasks', 'application_modules', 'habitnu_ai_meal_planner_configs', 'release_emails', 'history_trackers', 'cpt_code_restriction_configs', 'audio_contents', 'fathom_user_mappings', 'application_accesses', 'order_webhook_notifications', 'form_drafts', 'forms', 'immunizations', 'file_uploads', 'user_groups', 'shared_recording_progresses', 'feedback_conversations', 'habitnu_ai_meal_planner_tasks', 'yolanda_scales', 'dsme_goals', 'habitnu_curated_recipes', 'roles', 'partner_api_tokens', 'group_interactions', 'form_responses', 'cohort_join_requests', 'channels', 'android_healths', 'insurances', 'document_requirements', 'ai_feedback_responses', 'email_template_deliveries', 'user_sdoh_scores', 'eligibilities', 'fitbits', 'partner_logos', 'diagnostic_codes', 'app_dashboards', 'products', 'habitnu_ai_bedrock_interactions', 'lead_users', 'ring_buffers', 'class_planner_list_items', 'races', 'smoking_statuses', 'feature_flags', 'courses', 'allergies', 'email_template_versions', 'habitnu_ai_insights_inputs', 'appointments', 'class_planner_lists', 'notifications_groups', 'reports', 'curated_recipe_tags', 'documents', 'window_elements', 'dsme_sessions_data', 'habits', 'member_insights', 'users', 'habitnu_ai_insights_tasks', 'payment_transactions', 'sms_campaigns', 'health_providers', 'chapters', 'fathom_nu_sessions', 'registration_configurations', 'sleepSessions', 'jot_form_links', 'chatbot_client', 's3_files', 'release_email_logs', 'subscription_schedules', 'notification_recipients', 'notifications_scheduled_runs', 'blood_glucoses', 'chime_meetings', 'coach_interactions', 'billing_definitions', 'unsubscribe_details', 'appointment_groups', 'form_types', 'languages', 'menu_scans', 'journey_statuses', 'user_dsme_goals', 'withings', 'allergens', 'habitnu_ai_insights', 'notes', 'shared_recordings', 'document_trackings', 'drcare_webhooks', 'participations', 'health', 'lms_course_trackings', 'glucose_alert_preferences', 'form_translations', 'withings_histories', 'meeting_recorders', 'hpod_vital_reports', 'garmin', 'external_api_request_logs', 'sms_campaign_recipients', 'physician_assignments', 'group_interaction_types', 'medicines', 'chatbots', 'class_planner_episodes', 'partner_dashboards', 'auth_client_configs', 'connection_ids', 'fasten_webhook_events', 'pre_authorizations', 'discussion_blocked_lists', 'metro_encounter_reports', 'habitnu_ai_image_generator_configs', 'discussion_reactions', 'session_details', 'custom_recipes', 'feedback_responses', 'video_tags', 'chart_types', 'nudges_task', 'solera_activity_logs', 'outboxes', 'notifications', 'partner_enrollments', 'program_types', 'cdc_enrollment_motivations', 'solera_program_milestone_code_mappings', 'nudge_decider', 'fathom_events', 'transportations', 'participant_points', 'insurance_plans', 'educations', 'chatbot_clients', 'device_data', 'delayed_backend_mongoid_jobs', 'habitnu_ai_client_apps', 'habit_entries', 'habit_goals', 'daily_summary_dedupe_backups', 'gut_biome_events', 'user_types', 'gut_biome_status_updates', 'form_versions', 'health_connects', 'report_exports', 'states', 'medication_reviews', 'ada_markets', 'recording_servers', 'edamam_visions', 'coach_communications', 'cdcs', 'feedbacks', 'saml_service_providers', 'video_groups', 'mixpanel_flags', 'meetings', 'notifications_group_versions', 'temp-pipeline-output', 'frequent_foods', 'whatsapp_users', 'fathom_backfills', 'lookups', 'appointment_users', 'meeting_background_images', 'food_groups', 'time_decider_task', 'macronutrient_targets', 'form_assignments', 'media_convert_job_items', 'procedure_codes', 'notifications_message_events', 'claims', 'ethnicities', 'phone_number_validate_responses', 'payer_types', 'customer_orders', 'whatsapp_templates', 'payer_mappings', 'partners', 'settings', 'habitnu_ai_client_app_tokens', 'document_tracking_events', 'message_templates', 'buffer_elements', 'chatbot_context', 'chatbot_contexts', 'favorite_foods', 'coupons', 'health_insurances', 'fathom_sync_states', 'coach_availability_overrides', 'email_templates', 'medication_logs', 'whatsapp_page_trackings', 'class_planners', 'report_export_statuses', 'programs', 'cities', 'coach_availabilities', 'daily_summaries', 'marital_statuses', 'meeting_events', 'vaccines', 'fcm_errors', 'orders', 'mindfulness_daily_checkins', 'avatars', 'medications', 'reminders', 'learn_events', 'suggested_habits', 'claim_submitted_bies', 'messages', 'fathom_log_deliveries', 'log_urls', 'jot_form_data', 'meals', 'chatbot', 'whatsapp_support_agents', 'upload_document_types', 'videos', 'video_series', 'habitnu_ai_meal_plan_preferences', 'release_email_versions', 'rankings', 'cohort_reports', 'habitnu_ai_meal_plans', 'api_clients', 'blood_glucose_connections', 'meeting_tokens', 'course_documents', 'subscriptions', 'referrals', 'custom_foods', 'hub_report_jobs', 'habitnu_ai_health_system_tasks', 'ada_referral_codes', 'form_submission_requests', 'notification_queues', 'seminar_types', 'habitnu_ai_meals', 'apple_healths', 'cronHistory', 'system.views', 'whatsapp_messages', 'sliding_windows', 'fathom_health_deliveries', 'habitnu_ai_background_tasks', 'device_tokens', 'report_types', 'consumed_events', 'solera_lookup_data', 'user_milestones', 'order_items', 'user_events', 'time_decider', 'customers', 'interaction_types', 'configuration', 'test view']
+
+Found Document:
+{
+    "_id": "6ad84b2cdd53149ae8e2c99a",
+    "state": "accepted",
+    "validation_errors": [],
+    "submission_responses": [
+        "<result messages=\"Received 1 claims in file: claim-for-claim-6ad84b2cdd53149ae8e2c99a20261021-1-sj5kk9.xml\">\n  <claim batchid=\"\" bill_npi=\"1144722653\" bill_taxid=\"472164683\" claimid=\"6AD84B2CDD53149AE8E2C99A\" claimmd_id=\"890825969\" fdos=\"2025-02-13\" fileid=\"\" filename=\"claim-for-claim-6ad84b2cdd53149ae8e2c99a20261021-1-sj5kk9.xml\" ins_number=\"2H04N77CF73\" payerid=\"59230\" pcn=\"672DE648AC03EF00015A6B57\" remote_claimid=\"6AD84B2CDD53149AE8E2C99A\" sender_icn=\"\" sender_name=\"CLAIM.MD\" senderid=\"CLMMD\" status=\"A\" total_charge=\"56.06\">\n    <messages fields=\"prov_npi\" mesgid=\"ERPNPPES1\" message=\"Using group NPI [1144722653] in the Rendering NPI field will cause the billing provider to be sent as an individual [DSOUZA, DAPHNEY].\" status=\"W\" />\n  </claim>\n</result>\n"
+    ],
+    "payer_responses": [
+        "<result messages=\"Received 1 claims in file: claim-for-claim-6ad84b2cdd53149ae8e2c99a20261021-1-sj5kk9.xml\">\n  <claim batchid=\"\" bill_npi=\"1144722653\" bill_taxid=\"472164683\" claimid=\"6AD84B2CDD53149AE8E2C99A\" claimmd_id=\"890825969\" fdos=\"2025-02-13\" fileid=\"\" filename=\"claim-for-claim-6ad84b2cdd53149ae8e2c99a20261021-1-sj5kk9.xml\" ins_number=\"2H04N77CF73\" payerid=\"59230\" pcn=\"672DE648AC03EF00015A6B57\" remote_claimid=\"6AD84B2CDD53149AE8E2C99A\" sender_icn=\"\" sender_name=\"CLAIM.MD\" senderid=\"CLMMD\" status=\"A\" total_charge=\"56.06\">\n    <messages fields=\"prov_npi\" mesgid=\"ERPNPPES1\" message=\"Using group NPI [1144722653] in the Rendering NPI field will cause the billing provider to be sent as an individual [DSOUZA, DAPHNEY].\" status=\"W\" />\n  </claim>\n</result>\n"
+    ],
+    "era_responses": [],
+    "metadata": {
+        "regenerated_count": 1
+    },
+    "export_837_count": 0,
+    "milestone": "DSME",
+    "user_id": "672de648ac03ef00015a6b57",
+    "cohort_id": "67adbd0531b8c60001843fda",
+    "has_validation_errors": false,
+    "mark_as_deleted": false,
+    "completed": false,
+    "exported_837_status": false,
+    "updated_at": "2026-10-21 05:18:50.193000",
+    "created_at": "2026-10-21 05:18:36.417000",
+    "version": 18,
+    "patient": {
+        "_id": "6ad84b33dd53149ae8e2c9b3",
+        "firstname": "tetssd",
+        "middlename": "",
+        "lastname": "cde",
+        "gender": "unknown",
+        "birth_date": "2024-10-27T18:30:00.000Z",
+        "phone": "7892266218",
+        "marital_status": null,
+        "address": {
+            "_id": "6ad84b33dd53149ae8e2c9b5",
+            "street": "test",
+            "city": "kolkata",
+            "state": "AK",
+            "zip": "60654",
+            "modifier_id": "65d6f80828c3620001053dea",
+            "updated_at": "2026-10-21 05:18:43.579000",
+            "version": 1
+        }
+    },
+    "insurance": {
+        "_id": "6ad84b33dd53149ae8e2c9b6",
+        "insurance_id": "2H04N77CF73",
+        "insurance_group_id": null,
+        "insurance_type": "Government/Military",
+        "insurance_plan": "Heritage Consultants (59230)",
+        "insurance_payer_id": "59230",
+        "middlename": "",
+        "preauthorization_required": null,
+        "firstname": "tetssd",
+        "lastname": "cde",
+        "gender": "unknown",
+        "birth_date": "2024-10-27T18:30:00.000Z",
+        "phone": "7892262618",
+        "marital_status": null,
+        "address": {
+            "_id": "6ad84b33dd53149ae8e2c9b8",
+            "street": "ncelnfc ;qejc;e",
+            "city": "kolkata",
+            "state": "AK",
+            "zip": "60654",
+            "modifier_id": "65d6f80828c3620001053dea",
+            "updated_at": "2026-10-21 05:18:46.821000",
+            "version": 1
+        }
+    },
+    "billing_org": {
+        "_id": "6ad84b33dd53149ae8e2c9b9",
+        "is_primary": false,
+        "name": "HabitNu",
+        "npi": "1144722653",
+        "taxonomy": "251S00000X",
+        "tax_id": "472164683",
+        "phone": "312-566-7871",
+        "address": {
+            "_id": "6ad84b33dd53149ae8e2c9bb",
+            "street": "222 MERCHANDISE MART PLZ\nSTE 1230",
+            "city": "Chicago",
+            "state": "AK",
+            "zip": "60654",
+            "modifier_id": "65d6f80828c3620001053dea",
+            "updated_at": "2026-10-21 05:18:47.406000",
+            "version": 1
+        }
+    },
+    "service_org": {
+        "_id": "6ad84b33dd53149ae8e2c9bc",
+        "is_primary": false,
+        "name": "HabitNu",
+        "npi": "1144722653",
+        "taxonomy": "251S00000X",
+        "tax_id": "472164683",
+        "phone": "312-566-7871",
+        "address": {
+            "_id": "6ad84b33dd53149ae8e2c9be",
+            "street": "222 MERCHANDISE MART PLZ\nSTE 1230",
+            "city": "Chicago",
+            "state": "IL",
+            "zip": "60654"
+        }
+    },
+    "referring_org": {
+        "_id": "6ad84b33dd53149ae8e2c9bf",
+        "is_primary": false,
+        "name": "HabitNu",
+        "npi": "1144722653",
+        "taxonomy": "251S00000X",
+        "tax_id": "472164683",
+        "phone": "312-566-7871",
+        "address": {
+            "_id": "6ad84b33dd53149ae8e2c9c1",
+            "street": "222 MERCHANDISE MART PLZ\nSTE 1230",
+            "city": "Chicago",
+            "state": "IL",
+            "zip": "60654"
+        }
+    },
+    "notes": [
+        {
+            "_id": "6ad84b32272b1209e12eedce",
+            "note": "lokesh test claim not57e",
+            "creator_id": "65d6f80828c3620001053dea",
+            "updated_at": "2026-10-21 05:18:42.793000",
+            "created_at": "2026-10-21 05:18:42.793000"
+        }
+    ],
+    "charges": {
+        "_id": "6ad84b33dd53149ae8e2c9c3",
+        "additional_info": "",
+        "claim_narrative": "P4, 82",
+        "amount_billed": 56.06,
+        "amount_paid": 500.0,
+        "amount_due": -443.94,
+        "diagnoses": [
+            "R7303",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "used_outside_lab": "false",
+        "date_of_report": "2025-02-19T18:30:00.000Z",
+        "patient_account_number": "7139Xc03ef00015a6b57",
+        "procedures": [
+            {
+                "_id": "6ad84b33dd53149ae8e2c9c5",
+                "place_of_service": null,
+                "emergency": "",
+                "cpt": "G0108",
+                "modifiers": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "charges": 56.06,
+                "units": 1,
+                "metadata": {},
+                "start_date": "2025-02-13T18:30:00.000Z",
+                "end_date": "2025-02-13T18:30:00.000Z",
+                "head_coach_id": "659ba5244bfbaf0001907ca1",
+                "total_charges": 56.06,
+                "rendering_provider": {
+                    "_id": "6ad84b33dd53149ae8e2c9c6",
+                    "first_name": "Lokesh",
+                    "last_name": "test",
+                    "middle_name": "",
+                    "npi": "1144722653",
+                    "address": {
+                        "_id": "6ad84b33dd53149ae8e2c9c7",
+                        "street": "ewfd",
+                        "city": "sdfsdf",
+                        "state": "AK",
+                        "zip": "10111"
+                    }
+                },
+                "updated_at": "2026-10-21 05:18:47.861000",
+                "created_at": "2026-10-21 05:18:43.353000",
+                "version": 2,
+                "modifier_id": "65d6f80828c3620001053dea"
+            }
+        ],
+        "updated_at": "2026-10-21 05:18:50.158000",
+        "modifier_id": "65d6f80828c3620001053dea",
+        "version": 2,
+        "paid_date": "2025-09-01 00:00:00"
+    },
+    "modifier_id": "65d6f80828c3620001053dea",
+    "submitted_at": "2026-10-21 05:18:49.645000",
+    "claimmd_id": "890825969",
+    "era_claims": [
+        {
+            "_id": "6ad84b3a272b1209e12eedd4",
+            "claim_received_date": "2025-09-01 00:00:00",
+            "adjudication_date": "2025-09-30 00:00:00",
+            "batch_number": "12345",
+            "total_charge": "56.06",
+            "total_paid": "500.0",
+            "adjusted_amount": "56.06",
+            "payment_method": "",
+            "ins_number": "",
+            "denial_reason": "",
+            "charges": [
+                {
+                    "_id": "6ad84b3a272b1209e12eedd6",
+                    "allowed": "500",
+                    "charge": "500",
+                    "proc_code": "G0108",
+                    "units": "1",
+                    "from_dos": "2025-09-01",
+                    "thru_dos": "2025-09-30",
+                    "mod1": "test",
+                    "mod2": "test",
+                    "mod3": "test",
+                    "mod4": "test",
+                    "paid": "500",
+                    "pos": "automatio_81",
+                    "remark_code": "TEST",
+                    "paid_date": "2025-09-30 00:00:00",
+                    "check_number": "123",
+                    "pt_resp": "357.0",
+                    "coins": "123",
+                    "deduct": "111",
+                    "copay": "123",
+                    "adjustments": [
+                        {
+                            "_id": "6ad84b3a272b1209e12eedd7",
+                            "amount": "100",
+                            "code": "G0108",
+                            "group": "test"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+Document deleted successfully!
+Deleted 1 document(s) for the user.
+testst/n
+{'success': True}

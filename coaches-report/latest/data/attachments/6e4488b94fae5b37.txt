@@ -1,0 +1,2 @@
+Status Code: 200
+Response Text: {"success":false,"message":"Session id is required"}
