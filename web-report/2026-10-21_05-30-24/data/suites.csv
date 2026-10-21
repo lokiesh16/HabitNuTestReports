@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Wed Oct 21 05:29:34 UTC 2026","Wed Oct 21 05:30:06 UTC 2026","31374","tests.PlayWrightTests.UserFacingPortal.HomePage","test_zz_live_diag","","","","test_tobacco_last_year_card[chromium]",""
+"failed","Wed Oct 21 05:28:56 UTC 2026","Wed Oct 21 05:29:16 UTC 2026","19231","tests.PlayWrightTests.UserFacingPortal.HomePage","test_zz_live_diag","","","","test_chef_card_markup_and_order[chromium]",""
+"failed","Wed Oct 21 05:29:16 UTC 2026","Wed Oct 21 05:29:34 UTC 2026","17627","tests.PlayWrightTests.UserFacingPortal.HomePage","test_zz_live_diag","","","","test_profile_contact_edit_network_and_reset[chromium]",""
