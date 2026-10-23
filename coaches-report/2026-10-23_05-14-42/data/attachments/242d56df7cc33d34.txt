@@ -1,0 +1,4 @@
+initialWeight:444.0
+initialWeight:444.0
+weightLoss in test_9% WL Achieved:39.96
+targetWeight in test_9% WL Achieved:404.04
