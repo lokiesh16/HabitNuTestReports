@@ -1,0 +1,9 @@
+
+================================================================================
+TEST 8: Verify Coach Interaction and Edit Duration
+================================================================================
+Duration of Class Text: 1
+Toast message: Successfully updated
+Updated Status Text after editing duration: Active
+Educational Unit Texts: ['4']
+✅ Test 8 PASSED: Duration edited and status verified as Active
