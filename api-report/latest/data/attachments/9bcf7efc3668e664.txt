@@ -1,0 +1,3 @@
+Number of BREAKFAST meals: 0
+Rounded total calories for BREAKFAST meals: 0
+Expected total calories: 0
