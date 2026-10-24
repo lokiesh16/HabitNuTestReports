@@ -1,0 +1,1 @@
+https://admin-develop.habitnu.com/api/coaches/v1/admin/courses/6adc3c6f096d5a653aa0ea72/chapters/6adc3c72ee7686fe3e078d2d/add_event
