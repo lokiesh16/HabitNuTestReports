@@ -1,4 +1,0 @@
-2026-05-01T00:00:00.000Z  formatted date for adding weight
-https://admin-develop.habitnu.com/api/v1/course_documents/6add8ea3096d5a653aa0f080/signed_url  content id
-6add8eaba64429c0ff9f515a . 11111
-https://admin-develop.habitnu.com/api/coaches/v1/session_milestone/participant_session_data?session_id=6add8eaba64429c0ff9f515a&user_id=6628aedb2c6bf00001e7738bvmsdjnfhlrg
