@@ -1,0 +1,13 @@
+auth_token: LOKAESH N380oWMWRc8eHTfzTofIZjI2a7H7QgQTjYcq1klnjRdjrn30pztlBlHvy37iMRXlznkZWOklNnPeMj8FhUF05-1KB8YLnSgGpfnmJGSsBYMh5rAJpFWyu5WA4U1sFwKT3iY-qM6sGCOSBYhnvt-Vdaho4eBzsDFI08aR02jG3Do
+random_number:  983
+payload:  {'program_start_date': '2025-02-01', 'include_provider': True, 'npi': '2131', 'education_units': '4', 'provider_practice_name': 'lokeshPractice983', 'provider_last_name': 'lokesh983', 'provider_first_name': 'automation983', 'diagnosis_code': 'D50.8', 'credentials': 'MD', 'cell_phone': '7892271989', 'zip_code': '57730', 'program_id': '67d12316551eb3000144cf7b', 'partner_id': '67d1217a551eb3000144cf60', 'state': 'AL', 'city': 'Bhadravathi', 'mailaddress1': 'test', 'gender': 'male', 'referral_date': '2025-08-31', 'date_of_birth': '2025-08-31', 'last_name': '983', 'first_name': 'newchanges', 'email': 'lokesh+fromautomate983@habitnu.com', 'middle_name': 'test', 'maritial_status': '', 'ethnicity': '', 'race': [], 'home_number': '', 'work_phone': '', 'mailaddress2': 'test', 'contact_preference': '', 'preferred_phone_number': '', 'education': '', 'enrollment_source': '', 'enrollment_motivation': '', 'gdm': '', 'gluctest': '', 'risk_test': '', 'timezone': '', 'insurance_name': '', 'insurance_plan': {'name': '', 'payer_id': ''}, 'member_id': '', 'group_number': '', 'type': '', 'current_gender': 'male', 'insurance_plan_id': '', 'grant_name': '', 'grant_source': '', 'provider_phone': '345', 'provider_fax': 'test', 'cohort_id': '67d124ee551eb3000144cf90', 'provider_integration_id': '12345983'}
+Response status code: 200
+Password reset successful.
+email:lokesh+fromautomate983@habitnu.com
+auth_token: LOKAESH Lg64Gnj9wr1AD1RxelNmA69b7i4o1UgWR-FQTjSS6ZOJeBT2Ycb4RyxmZTHAnY3GF7ZSThxDsTB4t80RMeQGCDBFWmDl4gbQ32o2pn8VWQoLexIahcJFWIjZA6hpDExlzaH9Cm7OoIZ5MQC1anKImpaDypDXCkvOiB0yAbnkPik
+Session created successfully.
+headers:  {'Authorization': 'Token token=Lg64Gnj9wr1AD1RxelNmA69b7i4o1UgWR-FQTjSS6ZOJeBT2Ycb4RyxmZTHAnY3GF7ZSThxDsTB4t80RMeQGCDBFWmDl4gbQ32o2pn8VWQoLexIahcJFWIjZA6hpDExlzaH9Cm7OoIZ5MQC1anKImpaDypDXCkvOiB0yAbnkPik', 'Content-Type': 'application/json'}
+Onboarding started successfully.
+Profile data added successfully.
+Profile data added successfully.
+Profile data submitted successfully.

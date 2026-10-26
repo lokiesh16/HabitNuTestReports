@@ -1,0 +1,4 @@
+Found customer cus_VVIIAPavrEMICk with email lokesh+habit3@habitnu.com, deleting...
+Deleted customer: cus_VVIIAPavrEMICk - Deleted: True
+Nothing to delete! so you can proceed with other tests Subscription not found in MongoDB
+assert None is not None

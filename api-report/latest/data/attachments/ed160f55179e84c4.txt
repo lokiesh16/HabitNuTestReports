@@ -1,6 +1,0 @@
-Response status code for deleting MyMeal: 200
-Response status code for deleting MyMeal: 200
-Response status code for deleting MyMeal: 200
-Response status code for deleting MyMeal: 200
-Response status code for deleting MyMeal: 200
-Response status code for deleting MyMeal: 200
