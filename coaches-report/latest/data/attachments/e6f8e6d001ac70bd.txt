@@ -1,7 +1,0 @@
-Created participant email: dsme+user_1792986675@example.com
-
-================================================================================
-TEST 5: Add Another DSME Participant for Active Status
-================================================================================
-Participant created
-✅ Test 5 PASSED: Second participant created successfully
