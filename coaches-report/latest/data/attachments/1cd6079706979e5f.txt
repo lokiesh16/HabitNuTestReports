@@ -1,2 +1,0 @@
-Status Code: 200
-Response Text: {"completion_type":"release","definition":{"id":"7c081599-51f0-44b9-85a2-2fb2fb90d43e","combinator":"and","rules":[{"id":"ee8b3fdf-1067-4361-aa57-88044f5a7bc2","field":"weight","operator":"=","value":1,"valueSource":"value"},{"id":"9644d7fb-3f42-44a5-9333-aa26c925bfa6","field":"document","operator":"=","value":2,"valueSource":"value"}]},"id":"6adf07e6cb7a20ac8796df98","program_id":"661f6c17e242610001b3cf77","program_name":"automationFor","session_date_field":"weight","status":"draft","time_period":7}

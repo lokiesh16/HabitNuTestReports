@@ -1,0 +1,22 @@
+
+================================================================================
+TEST 10: Verify Program Start Date in Billing Tracker
+================================================================================
+➡️ Opening Billing Tracker Tab
+⏳ Waiting for Search Participant field
+
+🔎 Searching Active Participant
+
+🔎 Searching for participant: dsme+user_1793072850@example.com
+🧹 Search field cleared
+✏️ Entered email: dsme+user_1793072850@example.com
+⌨️ Enter key pressed to trigger search
+📅 Active Participant Start Date: 10/27/2026(12 months)
+
+🔎 Searching Nurture Participant
+
+🔎 Searching for participant: dsme+user1793072829@example.com
+🧹 Search field cleared
+✏️ Entered email: dsme+user1793072829@example.com
+⌨️ Enter key pressed to trigger search
+📅 Nurture Participant Start Date: (0 months)
