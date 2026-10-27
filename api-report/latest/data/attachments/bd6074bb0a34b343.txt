@@ -1,2 +1,0 @@
-auth_token: LOKAESH _b5z6pMAPNMYQm5Bbf5Z8XIEXZQFdGvCR2tkFlJuoM6AKeB15jtZDEhfsG-1IGRK60z7rB2m7w3znunDi1_tzMOTxQRAHumByvc02QMBVx5gczQ4VXceHQc9x7S7U_ah4UHQk-d0S2jYbKX-1Z8--kc3Vo6Q0AakTRPocsoLjOw
-Forms fetched successfully: [{'id': '67af02e08de6410001f82cf6', 'name': 'SDOH Survey', 'url': 'https://form.jotform.com/241343297888167', 'program_type': 'NDPP', 'tags': ['sdoh'], 'last_requested_date': None}]

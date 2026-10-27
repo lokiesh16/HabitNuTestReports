@@ -1,0 +1,7 @@
+Found customer cus_VW2JCX0Lug5DnX with email lokesh+habit3@habitnu.com, deleting...
+Deleted customer: cus_VW2JCX0Lug5DnX - Deleted: True
+Nothing to delete! so you can proceed with other tests Subscription not found in MongoDB
+assert None is not None
+User inputting DPP date: 11/03/2025 09:00 AM
+DPP update successful
+Program end date: 2024-03-05
