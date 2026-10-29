@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Thu Oct 29 04:47:27 UTC 2026","Thu Oct 29 04:47:57 UTC 2026","30002","tests.PlayWrightTests.CoachFacingPortal.AllCohortDashboardGraphs","test_additionalSummaryGraph","TestGraphAdditionalSummary","","","To ensure the user can scroll to the cohort name when it's not in view",""
+"broken","Thu Oct 29 04:47:23 UTC 2026","Thu Oct 29 04:47:27 UTC 2026","3960","tests.PlayWrightTests.CoachFacingPortal.AllCohortDashboardGraphs","test_additionalSummaryGraph","TestGraphAdditionalSummary","","","To ensure the summary table is visible only to Customer Admin users",""
