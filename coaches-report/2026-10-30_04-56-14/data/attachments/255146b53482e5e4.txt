@@ -1,0 +1,2 @@
+{'_id': '6ae422437eaaf2c38709340d', 'measures': {'sync_type': 'Coach', 'steps': 999}, 'owner': '6714ffc5f38f9c0001f229e1', 'date': '2026-10-30T04:51:15Z', 'date_at': datetime.datetime(2026, 10, 30, 4, 51, 15, 355000), 'local_time_zone_offset': -18000, 'local_datetime': datetime.datetime(2026, 10, 29, 23, 51, 15, 355000), 'external_id': None, 'updated_by_id': '65d6f80828c3620001053dea', 'flag': None, 'updated_at': datetime.datetime(2026, 10, 30, 4, 51, 15, 508000), 'created_at': datetime.datetime(2026, 10, 30, 4, 51, 15, 508000)} oooooooo
+Deleted records: 1

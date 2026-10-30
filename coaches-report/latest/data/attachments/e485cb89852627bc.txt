@@ -1,0 +1,2 @@
+Request URL: https://admin-uat.habitnu.com/api/coaches/v1/cohorts/None/participations?search_text=None&page=1
+Response status code: 404
