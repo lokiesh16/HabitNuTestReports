@@ -1,2 +1,0 @@
-testst/n
-{'accepted': 0, 'all': 1, 'archived': 1, 'draft': 0, 'exported': 0, 'processed': 0, 'rejected': 0}
