@@ -1,0 +1,5 @@
+Found customer cus_VW2d7a3L2Fkojy with email lokesh+habit3@habitnu.com, deleting...
+Deleted customer: cus_VW2d7a3L2Fkojy - Deleted: True
+Nothing to delete! so you can proceed with other tests Subscription not found in MongoDB
+assert None is not None
+User inputting DPP date: 11/07/2025 09:00 AM

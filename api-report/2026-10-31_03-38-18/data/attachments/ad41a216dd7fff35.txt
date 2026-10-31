@@ -1,0 +1,5 @@
+auth_token: LOKAESH xIAJf2WcOvLyeMmh-8DJ1djwh_qxIiWnPtNlMqi_Yao9z-TJpQQlRUBMSdTgabGiHoNTP6y_oU1P8mnlEt0lKBFY6_kYvACv0e5DOKlaBN0pEtw8JHdSmKKai4UTxWSnJCmsgtn7rW0sUW8unucVXdpTwcWnGpeOxXEIL831Wzc
+Found 1 rules for user lokesh+UR3@habitnu.com
+Rule 6ae561c9e3e0c75f986b9d7e deleted successfully.
+Successfully deleted 1 out of 1 rules.
+No rules found for user: lokesh+UR3@habitnu.com
