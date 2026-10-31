@@ -1,0 +1,5 @@
+https://admin-uat.habitnu.com/api/coaches/v1/partner/programs/661f6c17e242610001b3cf77/session_definition?partner_id=65e81613ccafcb000197db45  url
+headers:  {'Authorization': 'Token token=80DjZlbbjjelsYEWnBswfwei6JxgGShktTZnmxnzc3W-Osb950k48w0fD9Ufi0Fk5jJR0TG5PlaCp8iMpbLayG3jaJNf4xOh0K8ih--lqQ3rOdgqHR1AUvFlnJ2j_U6BugprpmAPIWf3dTceEmlrwi2YuDGq7P1nwCxhaflGKSk', 'Content-Type': 'application/json'}
+Status Code: 200
+Response Text: {"completion_type":"release","definition":{"id":"d562ca41-1814-4a8c-90b4-eae8c3ba5207","combinator":"and","rules":[]},"id":"6ae571b6e3e0c75f986b9f47","program_id":"661f6c17e242610001b3cf77","program_name":"automationFor","session_date_field":null,"status":"draft","time_period":7}
+{'completion_type': 'release', 'definition': {'id': 'd562ca41-1814-4a8c-90b4-eae8c3ba5207', 'combinator': 'and', 'rules': []}, 'id': '6ae571b6e3e0c75f986b9f47', 'program_id': '661f6c17e242610001b3cf77', 'program_name': 'automationFor', 'session_date_field': None, 'status': 'draft', 'time_period': 7}
