@@ -1,7 +1,0 @@
-
-================================================================================
-TEST 4: Update Participant Status to Nurture
-================================================================================
-Updated Status Text: Nurture
-Updated Start Date Text: (0 months)
-✅ Test 4 PASSED: Status updated to Nurture

@@ -1,0 +1,1 @@
+https://admin-uat.habitnu.com/api/coaches/v1/admin/courses/6ae6c2e3e3e0c75f986ba0d0/chapters/6ae6c2e6261ee069050056de/add_event
