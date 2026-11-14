@@ -1,0 +1,1 @@
+Timezone dropdown clicked successfully.
