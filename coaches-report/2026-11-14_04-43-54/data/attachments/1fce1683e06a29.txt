@@ -1,0 +1,2 @@
+auth_token: LOKAESH NgpXRWz8shjPPwl-Nap2NrsjRffkIe7mLN1F2hVdj8PXJALN7bkRBMhfyhnGi39bQhsVNDkN5hF2h2tSyKvkUPpvMDrG9K32XAPtHdge8cnKoQCWL1WdTt5X2W7KboluGlCCHB_BkTrKqf3dMlnENNMYJQuGeOW6f9G6X8Xsf7M
+{'success': True, 'token': 'NgpXRWz8shjPPwl-Nap2NrsjRffkIe7mLN1F2hVdj8PXJALN7bkRBMhfyhnGi39bQhsVNDkN5hF2h2tSyKvkUPpvMDrG9K32XAPtHdge8cnKoQCWL1WdTt5X2W7KboluGlCCHB_BkTrKqf3dMlnENNMYJQuGeOW6f9G6X8Xsf7M', 'user_id': '65d6f80828c3620001053dea', 'user_name': 'lokeshsum', 'email': 'lokesh+ca@habitnu.com', 'current_role': 'CustomerAdmin'}

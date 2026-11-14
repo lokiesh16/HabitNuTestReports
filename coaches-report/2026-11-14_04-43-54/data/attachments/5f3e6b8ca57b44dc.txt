@@ -1,0 +1,2 @@
+Deleted 0 documents from 'courses' collection.
+Deleted 0 documents from 'course_documents' collection.

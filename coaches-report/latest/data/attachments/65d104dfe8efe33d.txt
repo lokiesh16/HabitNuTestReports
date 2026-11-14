@@ -1,0 +1,2 @@
+auth_token: LOKAESH jHDcw2Hc17aSM4hxa4_Lk773b0XIDzHkxcqDUaBGvrsRC36-lrXZcLEbxWsdYYds5Bdb1K_G9Pj8H2O-zLQw8YRm-BmzePNDVOlPoJTlwpCqZbtvf3bzU8_Q5_jFYJrfuauYTG6F2MnJUKEZIaykwirwiGABumsHxvmyz1pPNeY
+{'success': True, 'token': 'jHDcw2Hc17aSM4hxa4_Lk773b0XIDzHkxcqDUaBGvrsRC36-lrXZcLEbxWsdYYds5Bdb1K_G9Pj8H2O-zLQw8YRm-BmzePNDVOlPoJTlwpCqZbtvf3bzU8_Q5_jFYJrfuauYTG6F2MnJUKEZIaykwirwiGABumsHxvmyz1pPNeY', 'user_id': '68be7f3de6f19600013947bb', 'user_name': 'Abdul', 'email': 'Abdul+admin@habitnu.com', 'current_role': 'Admin'}

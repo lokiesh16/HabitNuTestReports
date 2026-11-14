@@ -1,0 +1,2 @@
+{'_id': ObjectId('5a998d2ef979d5000a000009'), 'duration': 2, 'interaction_type': 2, 'coach_id': 'N7aDcbt382GzdSeNy', 'interaction_on': datetime.datetime(2018, 2, 26, 17, 43), 'owner': 'wmwwQnxczPLnNErnx'} oooooooo
+Deleted 1 document(s) for the user.
