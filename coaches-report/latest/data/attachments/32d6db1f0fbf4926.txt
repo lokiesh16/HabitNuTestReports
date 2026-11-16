@@ -1,2 +1,0 @@
-Login response status: 200
-Login response: {"success":true,"token":"0e7vM1P2h6WbzDQ8oy-eLGs8F8Gmuc7BaQyLDn4eVl4_zanD_3GDOpdkDZy7RZXDz4uBXqWUhkbAefYUkJVbW96KWXve_Win-9OurAvvdDv-YfCzKPcvadOLRc-dV0EJASsW9-UNwhsk6x2lEXoC7j8-FMG2cQ7tFTz0fw83veg","user_id":"68be7f3de6f19600013947bb","user_name":"Abdul","email":"Abdul+admin@habitnu.com","current_role":"Admin"}
