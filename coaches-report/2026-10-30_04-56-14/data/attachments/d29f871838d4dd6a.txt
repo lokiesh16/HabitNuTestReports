@@ -1,3 +1,0 @@
-Document to delete: {'_id': ObjectId('6ad8664290b6fce778200d5c'), 'index': 0, 'status': 'published', 'delivery_type': 'standard', 'course_identifier': [], 'title': 'Test', 'description': '', 'system_course': False, 'enable_force_open_content': True, 'poster_data': None, 'requires_enrollment': False, 'visible_for_enrollment': False, 'updated_at': datetime.datetime(2026, 10, 21, 7, 14, 57, 247000), 'created_at': datetime.datetime(2026, 10, 21, 7, 14, 10, 80000), 'version': 4, 'partner_id': ObjectId('68de6764a190d60001ebf1eb'), 'modifier_id': '664307250b9b48000123fce1'}
-Deleted 1 documents from 'courses' collection.
-Deleted 1 documents from 'course_documents' collection.

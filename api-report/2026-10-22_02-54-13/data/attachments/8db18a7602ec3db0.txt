@@ -1,3 +1,0 @@
-My Meal Login credentials: lokesh+habit2@habitnu.com Qwerty@123
-auth_token: LOKAESH kluc_ABMzas7yRIVSRutt_tNjUqlCgaMWxCEX7-72CIxPy1T4xqWUTxPFzoXc2l3xTMNhspTu3sdEIPiAF8M-Ejom3rV6PX3WAidB8qdcpKyu3ah_NMuS5Mefz8pTwzmnqu0yOKYjupRhTHQ89woEkpznPnB2D573l6ygkDZFsk
-Length of foods: 2

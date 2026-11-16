@@ -1,2 +1,0 @@
-auth_token: LOKAESH tOYhwDdX0jBaqJSocBzCH1qEksL0Y-xmH-LVKBAdZuTH7GaClC11xKd40P650MObXZKOh_y599Gz9AL5JOkiKwHF_Uzq31lxznCgm5b590g6-vIkEwM6KnVZDPF1kZULlhVbfJ4hUADVbOGRI9TO7ASXLLq24Fwt6g8rECAMI7M
-{'success': True, 'token': 'tOYhwDdX0jBaqJSocBzCH1qEksL0Y-xmH-LVKBAdZuTH7GaClC11xKd40P650MObXZKOh_y599Gz9AL5JOkiKwHF_Uzq31lxznCgm5b590g6-vIkEwM6KnVZDPF1kZULlhVbfJ4hUADVbOGRI9TO7ASXLLq24Fwt6g8rECAMI7M', 'user_id': '65152d326540640001d66a98', 'user_name': 'Enola', 'email': 'lokesh+admin@habitnu.com', 'current_role': 'Admin'}

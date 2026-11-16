@@ -1,7 +1,0 @@
-Session definition cleanup complete
-auth_token: LOKAESH nlvFt5nM8OTNJjOl536cXAh_AdCBkvamUXETmvzcWPi3gI8rApzP802jGxuYhrobzm1Vekx-hqNQcVeeNodeb2lZUvk9vlaK6wAoWkIcTADnhJSv0hGnLj00tHDtrmyE74PoGBWbo0QodDaghjjYbv4eF6Q677arday4_Hc0lnk
-Found document with _id: 69735795fdbb68f9ceae8649
-Updated 1 document(s)
-{'_id': ObjectId('5a998d2ef979d5000a000009'), 'duration': 2, 'interaction_type': 2, 'coach_id': 'N7aDcbt382GzdSeNy', 'interaction_on': datetime.datetime(2018, 2, 26, 17, 43), 'owner': 'wmwwQnxczPLnNErnx'} oooooooo
-Deleted 1 document(s) for the user.
-cdcUserId:65f29ebf7437d600017637e0

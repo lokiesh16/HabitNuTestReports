@@ -1,4 +1,0 @@
-https://admin-develop.habitnu.com/api/v1/course_documents/659ba3182278520001c59293/signed_url  content id
-watching 2nd document to complete session &&&&&&&&&&&&&&&&&&&&&&&&&&
-waiting for 50 seconds to validate completed session #########################
-https://admin-develop.habitnu.com/api/coaches/v1/session_milestone/participant_session_data?session_id=6ad6fe67e894bdd28bf3d8c6&user_id=6628aedb2c6bf00001e7738bvmsdjnfhlrg
