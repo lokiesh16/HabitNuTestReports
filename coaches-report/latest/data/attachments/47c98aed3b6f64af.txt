@@ -1,4 +1,0 @@
-Request URL: https://admin-develop.habitnu.com/api/coaches/v1/cohorts/automation_dsme_cohort/participations?search_text=None&page=1
-Response status code: 200
-Response data ofloki: {'data': [], 'meta': {'pagination': {'page': 1, 'pages': 1, 'per_page': 30, 'total': 0}, 'permissions': {'can_download_annual_assessment': True, 'can_add_participant': True, 'can_journey_status': True}}}
-Error: Added participant 'None' was NOT found in the response data.
