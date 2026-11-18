@@ -1,5 +1,0 @@
-self.__class__.course_id  6afbedd707dbfd81d635963d
-Modified payload for week 2 chapter:
-{'documents': [{'id': '6afbedd9171245d647e2055b', 'day': 1, 'force_open_content': False}, {'id': '657fe58c76061e000112d07e', 'day': 1, 'force_open_content': False}]}
-Adding content to week 2 chapter
-/api/coaches/v1/admin/courses/6afbedd707dbfd81d635963d/chapters/6afbedf2171245d647e20562/add_documents
