@@ -1,0 +1,6 @@
+Update completed! Matched: 1, Modified: 1
+Document to delete: {'_id': ObjectId('6aff2da934e20996d12df23c'), 'index': 0, 'status': 'published', 'delivery_type': 'standard', 'course_identifier': None, 'title': 'Apple - test', 'description': 'loki apiaut', 'enable_force_open_content': False, 'system_course': False, 'poster_data': None, 'requires_enrollment': None, 'visible_for_enrollment': None, 'partner_id': ObjectId('68de6764a190d60001ebf1eb'), 'modifier_id': '68de69c2a190d60001ebf203', 'updated_at': datetime.datetime(2026, 11, 19, 17, 11, 14, 76000), 'created_at': datetime.datetime(2026, 11, 19, 17, 11, 5, 746000), 'version': 2}
+Deleted 1 documents from 'courses' collection.
+Deleted 2 documents from 'course_documents' collection.
+6affc4a534e20996d12df547   ccourseIdddddd
+https://admin-develop.habitnu.com/api/coaches/v1/admin/courses/6affc4a534e20996d12df547/chapters/6affc4a58fc5f48b2ee2755f/add_documents
