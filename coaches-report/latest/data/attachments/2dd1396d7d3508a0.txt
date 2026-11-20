@@ -1,6 +1,0 @@
-
-================================================================================
-TEST 2: Add DSME Participant User
-================================================================================
-Participant created
-✅ Test 2 PASSED: Participant created successfully
