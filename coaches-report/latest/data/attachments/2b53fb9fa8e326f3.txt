@@ -1,0 +1,4 @@
+Modified payload for week 2 chapter:
+{'documents': [{'id': '6b01271e161de0b804c95833', 'day': 1, 'force_open_content': False}, {'id': '657fe58c76061e000112d07e', 'day': 1, 'force_open_content': False}]}
+Adding content to week 2 chapter
+/api/coaches/v1/admin/courses/6b01271e161de0b804c95832/chapters/6b0127408a39d9969be4e25d/add_documents
