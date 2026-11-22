@@ -1,3 +1,0 @@
-https://admin-develop.habitnu.com/api/v1/course_documents/6b01271e161de0b804c95833/signed_url  content id
-sessionId is 6b012720fb140b460ab1e914
-https://admin-develop.habitnu.com/api/coaches/v1/session_milestone/participant_session_data?session_id=6b012720fb140b460ab1e914&user_id=6628aedb2c6bf00001e7738bvmsdjnfhlrg

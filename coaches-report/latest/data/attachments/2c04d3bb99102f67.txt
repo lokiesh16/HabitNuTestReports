@@ -1,6 +1,0 @@
-call3: None
-call4: None
-call5: None
-call6: None
-{'_id': '6b0125cd8a39d9969be4e211', 'measures': {'sync_type': 'Coach', 'blood_sugar': 11, 'reading_time': 'Fasting', 'notes': 'added via automation'}, 'owner': '6714ffc5f38f9c0001f229e1', 'date': '2026-11-21T05:02:05Z', 'date_at': datetime.datetime(2026, 11, 21, 5, 2, 5, 864000), 'local_time_zone_offset': -21600, 'local_datetime': datetime.datetime(2026, 11, 20, 23, 2, 5, 864000), 'external_id': None, 'updated_by_id': '65d6f80828c3620001053dea', 'flag': None, 'updated_at': datetime.datetime(2026, 11, 21, 5, 2, 5, 904000), 'created_at': datetime.datetime(2026, 11, 21, 5, 2, 5, 904000)} oooooooo
-Deleted records: 1
