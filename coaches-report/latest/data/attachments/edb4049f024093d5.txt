@@ -1,3 +1,0 @@
-Months attended: 14
-Expected Months attended: 416
-Actual Months attended: 13
