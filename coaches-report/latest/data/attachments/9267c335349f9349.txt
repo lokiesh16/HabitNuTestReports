@@ -1,0 +1,2 @@
+Login response status: 200
+Login response: {"success":true,"token":"eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyZDUyODkxYi01NmIzLTQyNWYtOTdhYS0xNTUyMTAzZDkyODQiLCJzdWIiOiJ1X21jN3F6d1RZNGh3YUVPZ2ZaMzYtRnZvOHdJbHBWZWJEIiwiYXVkIjoiY29hY2hlcyIsImlhdCI6MTc5NTQ5NjUxMywiZXhwIjoxNzk1NTgyOTEzLCJpc3MiOiJoYWJpdG51LWRldmVsb3AiLCJzaWQiOiJkb2tuXzZwMDlCQkZQUV9PczE2cWtFNnByeEN5bU5oSkMtSkZRY2RTRVlvIn0.6990ksoGyl1wSMva-B4IO0NNLK3L6RskSsjIhy6__Xg","user_id":"68be7f3de6f19600013947bb","user_name":"Abdul","email":"abdul+admin@habitnu.com","current_role":"admin"}
