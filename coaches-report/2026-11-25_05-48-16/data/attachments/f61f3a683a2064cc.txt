@@ -1,0 +1,1 @@
+{'interaction_on': '2026-11-25T05:39:48.695Z', 'interaction_type': '1', 'duration': 123, 'description': 'eddd', 'user_id': '68b08cd2ddc18d0001584cd5', 'cohort_name': 'automationNEWDSME_Tracking', 'class_planner_list_id': '6b067499d72cda73f15a75cd'} <-- Request Payload
