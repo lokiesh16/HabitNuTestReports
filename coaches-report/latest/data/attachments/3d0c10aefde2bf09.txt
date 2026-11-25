@@ -1,1 +1,0 @@
-response_data[0]['wl_percent']:50.0
