@@ -1,0 +1,6 @@
+Update completed! Matched: 1, Modified: 1
+Document to delete: {'_id': ObjectId('6b07c2bbe943b77a1cac2ff1'), 'index': 0, 'status': 'published', 'delivery_type': 'standard', 'course_identifier': None, 'title': 'test1795670715', 'description': 'test', 'enable_force_open_content': True, 'system_course': False, 'poster_data': None, 'requires_enrollment': None, 'visible_for_enrollment': None, 'partner_id': ObjectId('68de6764a190d60001ebf1eb'), 'modifier_id': '68de69c2a190d60001ebf203', 'updated_at': datetime.datetime(2026, 11, 26, 5, 25, 24, 640000), 'created_at': datetime.datetime(2026, 11, 26, 5, 25, 15, 631000), 'version': 2}
+Deleted 1 documents from 'courses' collection.
+Deleted 4 documents from 'course_documents' collection.
+6b08fad6a3971062ffd4a3f1   ccourseIdddddd
+https://admin-develop.habitnu.com/api/coaches/v1/admin/courses/6b08fad6a3971062ffd4a3f1/chapters/6b08fad6f33fd12341e0f934/add_documents

@@ -1,0 +1,7 @@
+
+================================================================================
+TEST 6: Search Second Participant and Verify Status
+================================================================================
+Status Text: Pending
+Start Date Text: (0 months)
+✅ Test 6 PASSED: Second participant status verified as Pending
