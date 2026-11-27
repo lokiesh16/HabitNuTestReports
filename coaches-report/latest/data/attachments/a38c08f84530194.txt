@@ -1,3 +1,0 @@
-Deleted 1 courses, 2 documents
-6b09047bc8f5a1d0e0423240   ccourseIdddddd
-https://admin-develop.habitnu.com/api/coaches/v1/admin/courses/6b09047bc8f5a1d0e0423240/chapters/6b09047b8df77287e72ebf33/add_documents
